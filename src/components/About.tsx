@@ -9,8 +9,8 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">About Laso Wellness</h2>
           <div className="w-20 h-1 bg-laso-purple mx-auto mb-6"></div>
           <p className="text-lg">
-            Founded on principles of holistic healing, Laso Wellness brings together ancient Indian 
-            energy practices and modern therapeutic approaches to provide comprehensive healing solutions.
+            Laso Wellness brings together ancient Indian energy practices and modern therapeutic approaches to provide comprehensive healing solutions.
+            We believe in claims proven by authorised medical reports and client testimonials to support the authenticity of our claims.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ const About = () => {
               />
               <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
                 <p className="font-serif italic text-laso-darkgreen">
-                  "Energy healing is not just a practice, it's a journey toward wholeness."
+                  "Whatever happens on the Subtle Etheric body of a human, is reflected in the Physical body"
                 </p>
               </div>
             </div>
@@ -32,7 +32,7 @@ const About = () => {
 
           <div className="animate-fade-in-right">
             <h3 className="text-2xl font-serif font-bold text-laso-darkgreen mb-6">
-              Our Approach to Wellness
+              Our Approach to Health & Wellness
             </h3>
             <p className="mb-6">
               At Laso Wellness, we believe that true healing happens when the body's energy systems 
@@ -47,8 +47,8 @@ const About = () => {
                 <div>
                   <h4 className="font-bold mb-2">Ancient Indian Wisdom</h4>
                   <p>
-                    Drawing from traditional Indian healing systems including Ayurveda, 
-                    Yoga, and Pranayama to address the root causes of disease.
+                    Drawing from traditional Indian healing systems including Kanaad therapy, Naturopathy & 
+                    Kriya Yoga to address the root causes of disease.
                   </p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const About = () => {
                   <h4 className="font-bold mb-2">Modern Energy Techniques</h4>
                   <p>
                     Incorporating contemporary energy healing modalities that have been 
-                    validated through clinical experience and documented results.
+                    validated through clinical experience and well documented results.
                   </p>
                 </div>
               </div>
@@ -70,8 +70,7 @@ const About = () => {
             <div className="mt-8 p-4 bg-laso-lightpurple rounded-lg">
               <p className="italic">
                 "Our documented success with chronic conditions stems from our unique 
-                ability to identify and correct energy imbalances that conventional 
-                medicine often overlooks."
+                ability to identify and correct energy systems which heal the disease from the root"
               </p>
             </div>
           </div>
