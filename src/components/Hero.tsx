@@ -14,8 +14,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 animate-fade-in-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6">
-              Renew Your Energy, <br />
-              <span className="text-laso-darkgreen">Heal Your Life</span>
+              <span className="text-laso-darkgreen"></span>
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-xl">
               Experience transformative Energy Healing and Allied Therapies that have helped countless individuals overcome 
