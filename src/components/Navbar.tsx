@@ -40,7 +40,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white">
-            Book A Session
+            Clinic Appointments Only
           </Button>
         </div>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
             <a href="#testimonials" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Testimonials</a>
             <a href="#contact" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Contact</a>
             <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white w-full" onClick={toggleMenu}>
-              Book A Session
+              Book Clinic Appointment
             </Button>
           </div>
         </div>

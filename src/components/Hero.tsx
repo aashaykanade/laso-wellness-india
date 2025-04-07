@@ -24,7 +24,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-8 py-6 text-lg">
-                Book Your Healing Session
+                Book Clinic Appointment
               </Button>
               <Button variant="outline" className="border-laso-darkgreen text-laso-darkgreen hover:bg-laso-lightpurple px-8 py-6 text-lg">
                 Learn More

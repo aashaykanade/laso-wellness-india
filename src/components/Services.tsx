@@ -78,7 +78,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-8 py-6 text-lg">
-            Schedule Your Session
+            Request Clinic Appointment
           </Button>
         </div>
       </div>
