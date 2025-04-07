@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-serif font-bold mb-4">Laso Wellness</h3>
             <p className="mb-4 text-gray-200">
-              Transformative energy healing services for chronic conditions and overall wellness.
+              Transformative Energy Healing and Allied Therapies for chronic conditions and overall wellness.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-laso-cream transition-colors">

@@ -18,7 +18,7 @@ const Hero = () => {
               <span className="text-laso-darkgreen">Heal Your Life</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-xl">
-              Experience transformative energy healing that has helped countless individuals overcome 
+              Experience transformative Energy Healing and Allied Therapies that have helped countless individuals overcome 
               chronic conditions like Parkinson's and Diabetes. 
               At Laso Wellness, we blend ancient wisdom with modern techniques.
             </p>
@@ -39,7 +39,7 @@ const Hero = () => {
                   Proven Results
                 </h3>
                 <p className="mb-6">
-                  Our energy healing methods have successfully treated:
+                  Our healing methods have successfully treated:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center">
