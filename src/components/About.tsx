@@ -58,10 +58,10 @@ const About = () => {
                   <Heart className="text-laso-purple" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2">Modern Energy Techniques</h4>
+                  <h4 className="font-bold mb-2">Advanced Energy Techniques</h4>
                   <p>
-                    Incorporating contemporary energy healing modalities that have been 
-                    validated through clinical experience and well documented results.
+                    Utilizing specialized iatrogenic healing, counseling for psychosomatic diseases, and
+                    alternative medicine therapies validated through clinical experience.
                   </p>
                 </div>
               </div>

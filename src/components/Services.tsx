@@ -40,32 +40,32 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ServiceCard 
-            title="Energy Assessment"
-            description="A comprehensive evaluation of your energy field to identify imbalances and blockages contributing to your condition."
+            title="Advanced Energy Healing"
+            description="Cutting-edge energy healing techniques that balance and restore the body's natural energy systems to promote healing from within."
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>}
           />
           
           <ServiceCard 
-            title="Chakra Balancing"
-            description="Targeted healing sessions to harmonize your body's energy centers, promoting physical and emotional well-being."
-            icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="M12 22v-5"/><path d="M9 7V2"/><path d="M15 7V2"/><path d="M12 7V2"/><path d="M7 10.3C7 8.5 9.2 7 12 7s5 1.5 5 3.3c0 1.8-1.4 2.7-3 3.2m-5.7-1.7c-1.3.7-2.3 1.7-2.3 3 0 2.2 2.2 3.7 5 3.7 2.3 0 4.1-1 4.7-2.5"/></svg>}
+            title="Iatrogenic Healing"
+            description="Specialized healing protocols designed to address and reverse conditions caused by medical interventions or treatments."
+            icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="m8 14.5 4-9 4 9"/><path d="M8.5 18h7"/><circle cx="12" cy="12" r="10"/></svg>}
           />
           
           <ServiceCard 
-            title="Distance Healing"
-            description="Experience the benefits of our energy healing from anywhere in the world through powerful remote sessions."
-            icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>}
+            title="Counselling for Psychosomatic Diseases"
+            description="Holistic counseling that addresses the mind-body connection, helping to heal physical ailments with psychological origins."
+            icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>}
           />
           
           <ServiceCard 
-            title="Chronic Disease Support"
-            description="Specialized healing protocols designed to address specific chronic conditions like Parkinson's and Diabetes."
+            title="Alternative Medicine Therapies"
+            description="A blend of traditional healing methods and modern alternative approaches that complement conventional medical treatments."
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="m3 12 2-2v5c0 1.1.9 2 2 2h10"/><path d="M13 17v2"/><path d="M9 17v2"/><path d="m18 12 3-2"/><path d="m18 15 3 2"/><path d="M14.02 13.98 13 17"/><path d="M21 2c0 2.1-4 3.8-9 4l.004 3.995M21 3c0 2.1-4 3.8-9 4"/><path d="M11 4c-2.6-.5-5-.5-7 0"/><path d="m11 4 .001 4.002"/></svg>}
           />
           
           <ServiceCard 
-            title="Energy Cleansing"
-            description="Purify your energy field to remove negative influences and restore vitality to your mind, body, and spirit."
+            title="Energy Assessment"
+            description="A comprehensive evaluation of your energy field to identify imbalances and blockages contributing to your condition."
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="M8 16a5 5 0 0 1-1-9.9m11 4A4.98 4.98 0 0 1 16 10"/><path d="M12 12v9"/><path d="M8 20h8"/><path d="M12 12a5 5 0 0 1-5-5c0-2 0-3 2-4l.8-.8c.663-.64 1.44-1.195 2.3-1.647a4.7 4.7 0 0 1 3.8 0c.859.452 1.637 1.007 2.3 1.647l.8.8c2 1 2 2 2 4a5 5 0 0 1-5 5Z"/></svg>}
           />
           
@@ -87,3 +87,4 @@ const Services = () => {
 };
 
 export default Services;
+

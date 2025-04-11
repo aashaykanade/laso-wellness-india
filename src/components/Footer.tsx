@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-laso-darkgreen text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-serif font-bold mb-4">Laso Wellness</h3>
             <p className="mb-4 text-gray-200">
@@ -36,27 +36,8 @@ const Footer = () => {
               <li><a href="#results" className="text-gray-200 hover:text-white transition-colors">Results & Research</a></li>
               <li><a href="#testimonials" className="text-gray-200 hover:text-white transition-colors">Testimonials</a></li>
               <li><a href="#contact" className="text-gray-200 hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="/blog" className="text-gray-200 hover:text-white transition-colors">Blog</a></li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-serif font-bold mb-4">Newsletter</h3>
-            <p className="mb-4 text-gray-200">
-              Subscribe to receive updates on new healing techniques and success stories.
-            </p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="px-4 py-2 rounded-l-md w-full focus:outline-none text-gray-800"
-              />
-              <button 
-                type="submit" 
-                className="bg-laso-purple hover:bg-laso-green text-white px-4 py-2 rounded-r-md transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
         
@@ -69,3 +50,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
