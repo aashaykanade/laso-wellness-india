@@ -18,8 +18,8 @@ const About = () => {
           <div className="animate-fade-in-left">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=800&q=80" 
-                alt="Healing energy" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+                alt="Human Aura Healing" 
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
