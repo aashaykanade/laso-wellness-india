@@ -74,6 +74,12 @@ const Results = () => {
             improvement="76%"
             details="Resolved chronic digestive issues, restored normal function, and eliminated recurring symptoms."
           />
+          
+          <ResultCard 
+            condition="And many more..."
+            improvement="70%+"
+            details="Our energy healing methods have been successful in treating a wide range of conditions not listed here. Contact us to learn if we can help with your specific health concern."
+          />
         </div>
 
         <div className="mt-16 bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto">

@@ -62,6 +62,10 @@ const Hero = () => {
                     <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
                     <span>Autoimmune Conditions</span>
                   </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
+                    <span>And more...</span>
+                  </li>
                 </ul>
                 <div className="mt-6 text-center">
                   <a href="#results" className="text-laso-purple hover:text-laso-darkgreen font-medium">
