@@ -1,4 +1,3 @@
-
 import { Leaf, Heart } from "lucide-react";
 
 const About = () => {
@@ -18,9 +17,9 @@ const About = () => {
           <div className="animate-fade-in-left">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b" 
-                alt="Human Energy Body" 
-                className="rounded-lg shadow-lg"
+                src="/lovable-uploads/5cfa80ce-6286-4208-9441-93e3f308ad57.png" 
+                alt="Human Energy Field and Chakras" 
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
               <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
                 <p className="font-serif italic text-laso-darkgreen">
@@ -81,4 +80,3 @@ const About = () => {
 };
 
 export default About;
-
