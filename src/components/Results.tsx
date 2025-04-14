@@ -1,6 +1,7 @@
 
-import { Award } from "lucide-react";
+import { Award, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const ResultCard = ({ condition, improvement, details }: { condition: string; improvement: string; details: string }) => {
   return (
@@ -107,8 +108,11 @@ const Results = () => {
             </li>
           </ul>
           <div className="text-center">
-            <a href="#contact" className="text-laso-purple font-medium hover:text-laso-darkgreen">
-              Request our detailed case studies →
+            <a href="#testimonials">
+              <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-5 py-2 text-md flex items-center gap-2">
+                <Users size={18} />
+                View Patient Experiences
+              </Button>
             </a>
           </div>
         </div>

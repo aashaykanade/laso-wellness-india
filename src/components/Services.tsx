@@ -10,12 +10,6 @@ const ServiceCard = ({ title, description, icon }: { title: string; description:
       </div>
       <h3 className="text-xl font-serif font-bold mb-3">{title}</h3>
       <p className="mb-4 text-gray-700">{description}</p>
-      <a href="#contact" className="text-laso-purple font-medium hover:text-laso-darkgreen inline-flex items-center">
-        Learn more 
-        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
     </Card>
   );
 };
@@ -87,4 +81,3 @@ const Services = () => {
 };
 
 export default Services;
-
