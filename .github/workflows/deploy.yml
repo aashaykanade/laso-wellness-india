@@ -9,7 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    # 👇 Add this
     permissions:
       contents: write
       pages: write
