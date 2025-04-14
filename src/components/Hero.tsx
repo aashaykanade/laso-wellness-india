@@ -26,9 +26,11 @@ const Hero = () => {
               <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-8 py-6 text-lg">
                 Book Clinic Appointment
               </Button>
-              <Button variant="outline" className="border-laso-darkgreen text-laso-darkgreen hover:bg-laso-lightpurple px-8 py-6 text-lg">
-                Learn More
-              </Button>
+              <a href="#services">
+                <Button variant="outline" className="border-laso-darkgreen text-laso-darkgreen hover:bg-laso-lightpurple px-8 py-6 text-lg">
+                  Learn More
+                </Button>
+              </a>
             </div>
           </div>
           
@@ -68,8 +70,8 @@ const Hero = () => {
                   </li>
                 </ul>
                 <div className="mt-6 text-center">
-                  <a href="#results" className="text-laso-purple hover:text-laso-darkgreen font-medium">
-                    See documented case studies →
+                  <a href="#testimonials" className="text-laso-purple hover:text-laso-darkgreen font-medium">
+                    View Patient Experiences →
                   </a>
                 </div>
               </div>
