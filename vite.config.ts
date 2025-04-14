@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '', // Try an empty string as the base URL
+  base: '',
   server: {
     host: "::",
     port: 8080,
@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     rollupOptions: {
-      external: ['/assets/index-1IKJxTJt.js'],
+      external: ['/assets/index-DOQNPmY-.js'], // Use the exact filename from your build log
     },
   },
 }));
