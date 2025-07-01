@@ -29,16 +29,22 @@ const Contact = () => {
     try {
       console.log("Submitting form data:", formData);
       
+      // Get the Supabase project URL from the environment or use a placeholder
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://your-project-id.supabase.co';
+      
       // Send to Supabase Edge Function
-      const response = await fetch('/api/send-to-google-sheets', {
+      const response = await fetch(`${supabaseUrl}/functions/v1/send-to-google-sheets`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY || ''}`,
         },
         body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
+        const errorData = await response.text();
+        console.error('Function response error:', errorData);
         throw new Error('Failed to submit form');
       }
 
