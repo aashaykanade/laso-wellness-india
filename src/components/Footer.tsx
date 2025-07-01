@@ -7,7 +7,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-xl font-serif font-bold mb-4">Laso Wellness</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/48bd6227-0db3-4c0b-b1c1-c2b25efe0ae6.png" 
+                alt="Laso Wellness Logo" 
+                className="h-10 mr-3 brightness-0 invert" 
+              />
+            </div>
             <p className="mb-4 text-gray-200">
               Transformative Energy Healing and Allied Therapies for chronic conditions and overall wellness.
             </p>

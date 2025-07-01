@@ -27,9 +27,9 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/logo.png" 
+            src="/lovable-uploads/48bd6227-0db3-4c0b-b1c1-c2b25efe0ae6.png" 
             alt="Laso Wellness Logo" 
-            className="h-10 mr-3" 
+            className="h-12 mr-3" 
           />
         </a>
 
