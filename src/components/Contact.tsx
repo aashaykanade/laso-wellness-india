@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Phone, MapPin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,24 +22,53 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
     
-    // Show success toast
-    toast({
-      title: "Message Sent Successfully",
-      description: "Thank you for reaching out. We'll contact you shortly.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      condition: "",
-      message: ""
-    });
+    try {
+      console.log("Submitting form data:", formData);
+      
+      // Send to Supabase Edge Function
+      const response = await fetch('/api/send-to-google-sheets', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      const result = await response.json();
+      console.log('Form submission result:', result);
+
+      // Show success toast
+      toast({
+        title: "Message Sent Successfully",
+        description: "Thank you for reaching out. Your message has been saved to Google Sheets and we'll contact you shortly.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        condition: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Submission Error",
+        description: "There was an error submitting your form. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -168,13 +199,14 @@ const Contact = () => {
               
               <Button 
                 type="submit" 
-                className="w-full bg-laso-purple hover:bg-laso-darkgreen text-white py-6"
+                disabled={isSubmitting}
+                className="w-full bg-laso-purple hover:bg-laso-darkgreen text-white py-6 disabled:opacity-50"
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
               
               <p className="text-sm text-gray-600 text-center">
-                Your information is secure and will never be shared with third parties.
+                Your information is secure and will be saved to our Google Sheets for follow-up.
               </p>
             </form>
           </div>
