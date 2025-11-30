@@ -66,7 +66,7 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Client Testimonials</h2>
           <div className="w-20 h-1 bg-laso-purple mx-auto mb-6"></div>
           <p className="text-lg">
-            Hear from our clients who have experienced transformative healing through our energy work.
+            What our patients say
           </p>
         </div>
 
