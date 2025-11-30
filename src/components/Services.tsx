@@ -1,6 +1,8 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import auraEnergyHealing from "@/assets/aura-energy-healing.jpg";
+import ethericBodyHealing from "@/assets/etheric-body-healing.jpg";
 
 const ServiceCard = ({ title, description, icon, image }: { title: string; description: string; icon: React.ReactNode; image: string }) => {
   return (
@@ -47,14 +49,14 @@ const Services = () => {
           <ServiceCard 
             title="Advanced Energy Healing"
             description="Cutting-edge energy healing techniques that balance and restore the body's natural energy systems to promote healing from within."
-            image="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=200&q=80"
+            image={auraEnergyHealing}
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>}
           />
           
           <ServiceCard 
             title="Iatrogenic Healing"
             description="Specialized healing protocols designed to address and reverse conditions caused by medical interventions or treatments."
-            image="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=200&q=80"
+            image={ethericBodyHealing}
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-laso-purple"><path d="m8 14.5 4-9 4 9"/><path d="M8.5 18h7"/><circle cx="12" cy="12" r="10"/></svg>}
           />
           
