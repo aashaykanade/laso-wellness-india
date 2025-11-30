@@ -13,36 +13,36 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Rajesh Sharma",
-    location: "Delhi",
+    name: "Rajesh",
+    location: "",
     condition: "Parkinson's Disease",
     quote: "After being diagnosed with Parkinson's 7 years ago, I had lost hope of leading a normal life. The energy healing sessions at Laso Wellness have reduced my tremors by nearly 80% and given me back my independence."
   },
   {
     id: 2,
-    name: "Priya Patel",
-    location: "Mumbai",
+    name: "Priya",
+    location: "",
     condition: "Type 2 Diabetes",
     quote: "My blood sugar levels had been unmanageable for years despite medication. After just three months of Laso's energy healing protocols, my doctor has reduced my insulin dosage and my energy levels have skyrocketed."
   },
   {
     id: 3,
-    name: "Amita Verma",
-    location: "Bangalore",
+    name: "Amita",
+    location: "",
     condition: "Chronic Pain",
     quote: "I suffered from debilitating back pain for over a decade. Conventional treatments provided only temporary relief. Laso's energy healing has eliminated 90% of my pain and I'm now able to enjoy activities I had given up on years ago."
   },
   {
     id: 4,
-    name: "Vijay Krishnan",
-    location: "Chennai",
+    name: "Vijay",
+    location: "",
     condition: "Autoimmune Condition",
     quote: "My autoimmune condition had left me with constant fatigue and inflammation. Since working with Laso Wellness, my symptoms have drastically improved and my latest lab results show significant normalization of my inflammatory markers."
   },
   {
     id: 5,
-    name: "Sunita Reddy",
-    location: "Hyderabad",
+    name: "Sunita",
+    location: "",
     condition: "Anxiety & Depression",
     quote: "I had been on multiple medications for anxiety and depression with little improvement. The energy healing approach at Laso has transformed my mental health. I sleep better, feel calmer, and have rediscovered joy in my daily life."
   }
@@ -100,8 +100,8 @@ const Testimonials = () => {
                           <p className="text-lg italic mb-6">{testimonial.quote}</p>
                           <div>
                             <h4 className="font-bold text-xl">{testimonial.name}</h4>
-                            <p className="text-gray-600">{testimonial.location}</p>
                             <p className="text-laso-purple font-medium mt-1">Condition: {testimonial.condition}</p>
+                            <p className="text-sm text-gray-500 mt-2 italic">* Medical reports available for verification</p>
                           </div>
                         </div>
                       </Card>

@@ -23,9 +23,11 @@ const Hero = () => {
               At Laso Wellness, we blend ancient wisdom with modern techniques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-8 py-6 text-lg">
-                Book Clinic Appointment
-              </Button>
+              <a href="#contact">
+                <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-8 py-6 text-lg">
+                  Book Clinic Appointment
+                </Button>
+              </a>
               <a href="#services">
                 <Button variant="outline" className="border-laso-darkgreen text-laso-darkgreen hover:bg-laso-lightpurple px-8 py-6 text-lg">
                   Learn More
