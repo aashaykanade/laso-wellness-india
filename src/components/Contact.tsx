@@ -113,6 +113,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold mb-1">Call Us</h4>
                   <p>+91 9890038839</p>
+                  <p>+91 7744059460</p>
                   <p>By appointment only</p>
                 </div>
               </div>
