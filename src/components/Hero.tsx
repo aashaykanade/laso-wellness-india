@@ -48,23 +48,23 @@ const Hero = () => {
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
-                    <span>Diabetes</span>
+                    <span>Skeletal Disorders</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
-                    <span>Depression and Addiction</span>
+                    <span>Addiction and Depression</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
-                    <span>Auto Immune Conditions</span>
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
-                    <span>Skeletal Diseases</span>
+                    <span>Skin Conditions</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
                     <span>Parkinson's</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>
+                    <span>Hypertension</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-laso-purple mr-2"></div>

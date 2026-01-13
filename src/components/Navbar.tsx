@@ -43,9 +43,11 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white">
-            Clinic Appointments Only
-          </Button>
+          <a href="#contact">
+            <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white">
+              Clinic Appointments Only
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -63,9 +65,11 @@ const Navbar = () => {
             <a href="#results" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Results</a>
             <a href="#testimonials" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Testimonials</a>
             <a href="#contact" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Contact</a>
-            <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white w-full" onClick={toggleMenu}>
-              Book Clinic Appointment
-            </Button>
+            <a href="#contact" className="w-full" onClick={toggleMenu}>
+              <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white w-full">
+                Book Clinic Appointment
+              </Button>
+            </a>
           </div>
         </div>
       )}
