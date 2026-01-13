@@ -29,7 +29,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/48bd6227-0db3-4c0b-b1c1-c2b25efe0ae6.png" 
             alt="Laso Wellness Logo" 
-            className="h-12 mr-3" 
+            className="h-16 md:h-20 mr-3" 
           />
         </a>
 
