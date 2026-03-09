@@ -102,7 +102,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">Visit Us</h4>
-                  <p>Narayan Peth, Pune</p>
+                  <p>Near SP College, Sadashiv Peth, Tilak Road, Pune</p>
                 </div>
               </div>
               
