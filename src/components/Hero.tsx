@@ -1,14 +1,20 @@
 
 import { Button } from "@/components/ui/button";
+import chakraBg from "@/assets/chakra-bg.mp4";
 
 const Hero = () => {
   return (
     <section className="min-h-screen pt-20 flex items-center relative overflow-hidden">
       <div className="absolute inset-0 hero-gradient -z-10"></div>
-      <div 
-        className="absolute inset-0 -z-20 bg-cover bg-center opacity-20" 
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80')" }}
-      ></div>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover -z-20 opacity-25 mix-blend-luminosity"
+      >
+        <source src={chakraBg} type="video/mp4" />
+      </video>
       
       <div className="container mx-auto px-4 py-20">
         <div className="flex flex-col md:flex-row items-center">
