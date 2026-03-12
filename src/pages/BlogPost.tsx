@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import authorAvatar from "@/assets/author-avatar.png";
 
 // This would typically come from a CMS or database
 const getBlogPostData = (slug: string) => {
