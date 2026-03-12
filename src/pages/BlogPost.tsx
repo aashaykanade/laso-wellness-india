@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import authorAvatar from "@/assets/author-avatar.png";
 
 // This would typically come from a CMS or database
 const getBlogPostData = (slug: string) => {
@@ -53,7 +54,7 @@ const getBlogPostData = (slug: string) => {
     `,
     tags: ["Energy Healing", "Holistic Health", "Wellness", "Alternative Medicine"],
     author: "Yashwant Kanade",
-    authorImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+    authorImage: authorAvatar,
   };
 };
 
