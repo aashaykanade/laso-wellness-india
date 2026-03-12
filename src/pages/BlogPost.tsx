@@ -54,7 +54,7 @@ const getBlogPostData = (slug: string) => {
     `,
     tags: ["Energy Healing", "Holistic Health", "Wellness", "Alternative Medicine"],
     author: "Yashwant Kanade",
-    authorImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+    authorImage: authorAvatar,
   };
 };
 
