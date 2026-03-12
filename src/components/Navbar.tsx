@@ -61,11 +61,12 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="flex flex-col py-4 space-y-4 px-4">
-            <a href="#about" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>About</a>
-            <a href="#services" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Services</a>
-            <a href="#results" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Results</a>
-            <a href="#testimonials" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Testimonials</a>
-            <a href="#contact" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Contact</a>
+            <a href="/#about" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>About</a>
+            <a href="/#services" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Services</a>
+            <a href="/#results" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Results</a>
+            <a href="/#testimonials" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Testimonials</a>
+            <a href="/blog" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Blog</a>
+            <a href="/#contact" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Contact</a>
             <a href="#contact" className="w-full" onClick={toggleMenu}>
               <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white w-full">
                 Book Clinic Appointment
