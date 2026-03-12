@@ -52,7 +52,7 @@ const getBlogPostData = (slug: string) => {
       <p>If you're struggling with a chronic condition or simply want to enhance your overall well-being, we invite you to explore how energy healing might help. Contact Laso Wellness today to learn more about our clinic services.</p>
     `,
     tags: ["Energy Healing", "Holistic Health", "Wellness", "Alternative Medicine"],
-    author: "Dr. Samantha Patel",
+    author: "Yashwant Kanade",
     authorImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
   };
 };
