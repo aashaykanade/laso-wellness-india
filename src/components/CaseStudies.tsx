@@ -68,7 +68,7 @@ const CaseStudies = () => {
           </h2>
           <div className="w-20 h-1 bg-laso-purple mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground">
-            These are real cases from our clinic. Names withheld for privacy, but outcomes speak for themselves.
+            Treated by <strong>Dr. Yashwant Kanade</strong>, <span className="italic">MD, Alternative Medicine</span> — real cases from our clinic. Names withheld for privacy, but outcomes speak for themselves.
           </p>
         </div>
 
