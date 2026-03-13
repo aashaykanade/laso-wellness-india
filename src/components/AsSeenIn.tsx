@@ -12,13 +12,13 @@ const AsSeenIn = () => {
         <div className="flex items-center justify-center gap-12 md:gap-20">
           <img
             src={sakalLogo}
-            alt="Sakal Newspaper"
-            className="h-10 md:h-14 object-contain grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all"
+            alt="Sakal Marathi Newspaper - सकाळ"
+            className="h-16 md:h-24 object-contain opacity-90 hover:opacity-100 transition-all"
           />
           <img
             src={loksattaLogo}
-            alt="Loksatta Newspaper"
-            className="h-10 md:h-14 object-contain grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all"
+            alt="Loksatta Marathi Newspaper - लोकसत्ता"
+            className="h-16 md:h-24 object-contain opacity-90 hover:opacity-100 transition-all"
           />
         </div>
       </div>
