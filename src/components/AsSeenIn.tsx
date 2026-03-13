@@ -4,9 +4,9 @@ import loksattaLogo from "@/assets/loksatta-logo.png";
 
 const AsSeenIn = () => {
   return (
-    <section className="py-8 bg-muted/50 border-y border-border">
+    <section className="py-10 bg-accent border-y border-border">
       <div className="container mx-auto px-4">
-        <p className="text-center text-sm font-medium text-muted-foreground uppercase tracking-widest mb-6">
+        <p className="text-center text-base font-semibold text-foreground uppercase tracking-widest mb-6">
           As Seen In
         </p>
         <div className="flex items-center justify-center gap-12 md:gap-20">
