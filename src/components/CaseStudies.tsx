@@ -4,41 +4,24 @@ import { ChevronRight, Clock, CheckCircle2 } from "lucide-react";
 const caseStudies = [
   {
     id: 1,
-    condition: "Chronic Knee Pain (Osteoarthritis)",
-    patient: "Male, 58 years",
+    condition: "Depression & Addiction",
+    patient: "Male, 29 years",
     duration: "3 months of treatment",
     before: [
-      "Severe knee pain limiting daily movement",
-      "Dependent on painkillers for 4+ years",
-      "Unable to climb stairs without assistance",
+      "Severe depression with substance dependency",
+      "On anti-depressants and counselling for 3+ years",
+      "Strained family relationships and inability to hold a job",
     ],
     after: [
-      "Pain-free walking and daily activities",
-      "Completely off painkillers",
-      "Climbing stairs independently",
+      "Stable mood and freedom from addictive patterns",
+      "Gradually tapered off medication under doctor supervision",
+      "Rebuilt relationships and resumed productive work life",
     ],
-    quote: "I had given up hope after years of medication. The healing sessions changed my life completely.",
+    quote: "Dr. Yashwant Kanade helped me find a way out when nothing else worked. I finally feel free.",
   },
   {
     id: 2,
-    condition: "Depression & Anxiety",
-    patient: "Female, 34 years",
-    duration: "2 months of treatment",
-    before: [
-      "Persistent low mood and lack of motivation",
-      "On anti-depressants for 2 years",
-      "Difficulty maintaining relationships and work",
-    ],
-    after: [
-      "Stable mood and renewed sense of purpose",
-      "Gradually tapered off medication under doctor supervision",
-      "Improved relationships and work performance",
-    ],
-    quote: "I feel like myself again. The energy healing addressed root causes that medication never could.",
-  },
-  {
-    id: 3,
-    condition: "Skin Psoriasis",
+    condition: "Skin Disease (Psoriasis)",
     patient: "Male, 42 years",
     duration: "4 months of treatment",
     before: [
@@ -51,7 +34,24 @@ const caseStudies = [
       "No recurrence in 6+ months post-treatment",
       "Restful sleep and improved confidence",
     ],
-    quote: "After years of creams and steroids, this holistic approach finally gave me lasting results.",
+    quote: "After years of creams and steroids, the holistic approach by Dr. Kanade finally gave me lasting results.",
+  },
+  {
+    id: 3,
+    condition: "Chronic Knee & Bone Pain",
+    patient: "Male, 58 years",
+    duration: "3 months of treatment",
+    before: [
+      "Severe knee and bone pain limiting daily movement",
+      "Dependent on painkillers for 4+ years",
+      "Unable to climb stairs without assistance",
+    ],
+    after: [
+      "Pain-free walking and daily activities",
+      "Completely off painkillers",
+      "Climbing stairs independently",
+    ],
+    quote: "I had given up hope after years of medication. Dr. Yashwant Kanade's healing sessions changed my life.",
   },
 ];
 
