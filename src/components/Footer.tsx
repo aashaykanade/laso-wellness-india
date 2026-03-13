@@ -1,4 +1,6 @@
 
+import { Linkedin, Instagram } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -17,6 +19,25 @@ const Footer = () => {
             <p className="mb-4 text-gray-200">
               Transformative Energy Healing and Allied Therapies for chronic conditions and overall wellness.
             </p>
+            <div className="flex gap-3 mt-4">
+              <a
+                href="https://www.linkedin.com/company/laso-wellness-centre/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Laso Wellness on LinkedIn"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="Follow Laso Wellness on Instagram (coming soon)"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-default opacity-60"
+                title="Coming soon"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
           </div>
           
           <div>

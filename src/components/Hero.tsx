@@ -11,7 +11,8 @@ const Hero = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover -z-20 opacity-25 mix-blend-luminosity"
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover -z-20 opacity-40"
       >
         <source src={chakraBg} type="video/mp4" />
       </video>
