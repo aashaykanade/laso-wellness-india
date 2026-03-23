@@ -30,10 +30,11 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
-                aria-label="Follow Laso Wellness on Instagram (coming soon)"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-default opacity-60"
-                title="Coming soon"
+                href="https://www.instagram.com/laso_wellness/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Laso Wellness on Instagram"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
