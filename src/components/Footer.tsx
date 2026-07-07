@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-laso-darkgreen text-white py-12">
+    <footer className="bg-[#050318]/80 backdrop-blur-xl border-t border-white/10 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+        <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/60">
           <p>&copy; {currentYear} Laso Wellness. All rights reserved.</p>
         </div>
       </div>
