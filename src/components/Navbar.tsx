@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#05041a]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)] py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center">
           <img 
@@ -52,14 +52,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-gray-600" onClick={toggleMenu}>
+        <button className="md:hidden text-white/80" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-[#05041a]/95 backdrop-blur-xl border-t border-white/10 shadow-2xl">
           <div className="flex flex-col py-4 space-y-4 px-4">
             <a href="/#about" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>About</a>
             <a href="/#services" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Services</a>
