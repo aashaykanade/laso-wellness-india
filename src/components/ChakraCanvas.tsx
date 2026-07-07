@@ -28,23 +28,23 @@ const ChakraCanvas = () => {
     window.addEventListener("resize", resize);
 
     const chakraDefs = [
-      { name: "crown", px: 0.5, py: 0.12, col: "#c084fc", r: 14 },
-      { name: "third", px: 0.5, py: 0.22, col: "#818cf8", r: 12 },
-      { name: "throat", px: 0.5, py: 0.32, col: "#38bdf8", r: 12 },
-      { name: "heart", px: 0.5, py: 0.44, col: "#34d399", r: 16 },
-      { name: "solar", px: 0.5, py: 0.56, col: "#fbbf24", r: 12 },
-      { name: "sacral", px: 0.5, py: 0.68, col: "#fb923c", r: 12 },
-      { name: "root", px: 0.5, py: 0.8, col: "#f87171", r: 13 },
+      { name: "crown", px: 0.66, py: 0.12, col: "#c084fc", r: 24 },
+      { name: "third", px: 0.66, py: 0.22, col: "#818cf8", r: 21 },
+      { name: "throat", px: 0.66, py: 0.32, col: "#38bdf8", r: 21 },
+      { name: "heart", px: 0.66, py: 0.44, col: "#34d399", r: 28 },
+      { name: "solar", px: 0.66, py: 0.56, col: "#fbbf24", r: 22 },
+      { name: "sacral", px: 0.66, py: 0.68, col: "#fb923c", r: 22 },
+      { name: "root", px: 0.66, py: 0.8, col: "#f87171", r: 23 },
     ];
 
-    const NPART = 55;
+    const NPART = 110;
     const particles = Array.from({ length: NPART }, () => ({
       t: Math.random(),
       speed: 0.0008 + Math.random() * 0.0014,
       side: Math.random() < 0.5 ? -1 : 1,
-      spread: 12 + Math.random() * 28,
-      alpha: 0.3 + Math.random() * 0.55,
-      size: 1.2 + Math.random() * 2.2,
+      spread: 18 + Math.random() * 48,
+      alpha: 0.5 + Math.random() * 0.5,
+      size: 1.8 + Math.random() * 3.4,
     }));
 
     const fieldParticles: Array<{
@@ -62,9 +62,9 @@ const ChakraCanvas = () => {
           chakraIdx: ci,
           angle: (Math.PI * 2 / n) * i + Math.random() * 0.5,
           angSpeed: (0.008 + Math.random() * 0.012) * (Math.random() < 0.5 ? 1 : -1),
-          radius: ch.r * 2.5 + Math.random() * ch.r * 3,
-          alpha: 0.2 + Math.random() * 0.35,
-          size: 0.8 + Math.random() * 1.4,
+          radius: ch.r * 2.6 + Math.random() * ch.r * 3.6,
+          alpha: 0.35 + Math.random() * 0.45,
+          size: 1.2 + Math.random() * 2,
         });
       }
     });
@@ -73,7 +73,7 @@ const ChakraCanvas = () => {
     let lastRipple = 0;
     const spawnRipple = () => {
       const ci = Math.floor(Math.random() * chakraDefs.length);
-      ripples.push({ chakraIdx: ci, r: 0, maxR: 28 + Math.random() * 20, alpha: 0.5, speed: 0.4 + Math.random() * 0.3 });
+      ripples.push({ chakraIdx: ci, r: 0, maxR: 54 + Math.random() * 34, alpha: 0.82, speed: 0.65 + Math.random() * 0.38 });
     };
 
     const getChakraXY = (ch: typeof chakraDefs[0]) => ({ x: ch.px * W, y: ch.py * H });
@@ -81,15 +81,15 @@ const ChakraCanvas = () => {
     const drawBody = () => {
       const topY = chakraDefs[0].py * H;
       const botY = chakraDefs[6].py * H;
-      const cx = W * 0.5;
+      const cx = W * (W < 768 ? 0.54 : 0.66);
       const grad = ctx.createLinearGradient(cx, topY, cx, botY);
-      grad.addColorStop(0, "rgba(192,132,252,0.07)");
-      grad.addColorStop(0.35, "rgba(52,211,153,0.09)");
-      grad.addColorStop(0.7, "rgba(251,191,36,0.07)");
-      grad.addColorStop(1, "rgba(248,113,113,0.06)");
+      grad.addColorStop(0, "rgba(192,132,252,0.18)");
+      grad.addColorStop(0.35, "rgba(52,211,153,0.22)");
+      grad.addColorStop(0.7, "rgba(251,191,36,0.18)");
+      grad.addColorStop(1, "rgba(248,113,113,0.16)");
       ctx.save();
       ctx.beginPath();
-      ctx.ellipse(cx, (topY + botY) / 2, 18, (botY - topY) / 2 + 10, 0, 0, Math.PI * 2);
+      ctx.ellipse(cx, (topY + botY) / 2, W < 768 ? 30 : 46, (botY - topY) / 2 + 22, 0, 0, Math.PI * 2);
       ctx.fillStyle = grad;
       ctx.fill();
       ctx.restore();
@@ -107,7 +107,7 @@ const ChakraCanvas = () => {
         g.addColorStop(0, chakraDefs[i].col + "55");
         g.addColorStop(1, chakraDefs[i + 1].col + "55");
         ctx.strokeStyle = g;
-        ctx.lineWidth = 1.5;
+        ctx.lineWidth = 4;
         ctx.stroke();
         ctx.restore();
       }
@@ -116,9 +116,9 @@ const ChakraCanvas = () => {
     const draw = (ts: number) => {
       ctx.clearRect(0, 0, W, H);
 
-      const bgG = ctx.createRadialGradient(W * 0.5, H * 0.45, 0, W * 0.5, H * 0.45, W * 0.7);
-      bgG.addColorStop(0, "#0d0820");
-      bgG.addColorStop(0.5, "#070514");
+      const bgG = ctx.createRadialGradient(W * 0.66, H * 0.45, 0, W * 0.66, H * 0.45, W * 0.72);
+      bgG.addColorStop(0, "#26124c");
+      bgG.addColorStop(0.46, "#12091f");
       bgG.addColorStop(1, "#020208");
       ctx.fillStyle = bgG;
       ctx.fillRect(0, 0, W, H);
@@ -129,8 +129,8 @@ const ChakraCanvas = () => {
         const sy = (i * 97.3 + 23) % H;
         const sa = 0.08 + ((i * 0.031) % 0.18);
         ctx.beginPath();
-        ctx.arc(sx, sy, 0.7, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(200,180,255,${sa})`;
+        ctx.arc(sx, sy, 1.15, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(220,210,255,${sa + 0.14})`;
         ctx.fill();
       }
       ctx.restore();
@@ -152,7 +152,7 @@ const ChakraCanvas = () => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, rp.r, 0, Math.PI * 2);
         ctx.strokeStyle = ch.col + Math.round(rp.alpha * 255).toString(16).padStart(2, "0");
-        ctx.lineWidth = 0.8;
+        ctx.lineWidth = 1.8;
         ctx.stroke();
         ctx.restore();
         if (rp.r > rp.maxR || rp.alpha < 0.02) ripples.splice(i, 1);
@@ -161,7 +161,7 @@ const ChakraCanvas = () => {
       const topY = chakraDefs[0].py * H;
       const botY = chakraDefs[6].py * H;
       const spineH = botY - topY;
-      const cx = W * 0.5;
+      const cx = W * (W < 768 ? 0.54 : 0.66);
 
       particles.forEach((p) => {
         p.t += p.speed;
@@ -206,8 +206,8 @@ const ChakraCanvas = () => {
         const pulse = 0.7 + 0.3 * Math.sin(ts * 0.001 * (1 + ci * 0.15) + ci);
 
         const glow = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, ch.r * 5 * pulse);
-        glow.addColorStop(0, ch.col + "55");
-        glow.addColorStop(0.4, ch.col + "22");
+        glow.addColorStop(0, ch.col + "aa");
+        glow.addColorStop(0.4, ch.col + "55");
         glow.addColorStop(1, ch.col + "00");
         ctx.save();
         ctx.beginPath();
