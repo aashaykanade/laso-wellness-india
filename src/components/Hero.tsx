@@ -3,16 +3,16 @@ import ChakraCanvas from "@/components/ChakraCanvas";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-20 flex items-center relative overflow-hidden bg-[#040410]">
+    <section className="min-h-screen pt-20 flex items-center relative isolate overflow-hidden bg-[#040410]">
       {/* Animated chakra canvas background */}
-      <div className="absolute inset-0 -z-20">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <ChakraCanvas />
       </div>
       {/* Subtle overlay — keeps text legible while letting the animation shine */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#040410]/80 via-[#040410]/30 to-transparent"></div>
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#040410]/70 via-transparent to-[#040410]/40"></div>
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-[#040410]/55 via-[#040410]/10 to-transparent"></div>
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#040410]/45 via-transparent to-[#040410]/15"></div>
 
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-20 relative z-20">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 animate-fade-in-left">
             <p className="text-xs md:text-sm tracking-[0.35em] text-purple-300/70 uppercase mb-5 font-light">
