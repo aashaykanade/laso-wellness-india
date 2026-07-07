@@ -28,13 +28,13 @@ const ChakraCanvas = () => {
     window.addEventListener("resize", resize);
 
     const chakraDefs = [
-      { name: "crown", px: 0.5, py: 0.12, col: "#c084fc", r: 7 },
-      { name: "third", px: 0.5, py: 0.2, col: "#818cf8", r: 6 },
-      { name: "throat", px: 0.5, py: 0.29, col: "#38bdf8", r: 6 },
-      { name: "heart", px: 0.5, py: 0.4, col: "#34d399", r: 8 },
-      { name: "solar", px: 0.5, py: 0.51, col: "#fbbf24", r: 6 },
-      { name: "sacral", px: 0.5, py: 0.61, col: "#fb923c", r: 6 },
-      { name: "root", px: 0.5, py: 0.7, col: "#f87171", r: 6 },
+      { name: "crown", px: 0.5, py: 0.12, col: "#c084fc", r: 14 },
+      { name: "third", px: 0.5, py: 0.22, col: "#818cf8", r: 12 },
+      { name: "throat", px: 0.5, py: 0.32, col: "#38bdf8", r: 12 },
+      { name: "heart", px: 0.5, py: 0.44, col: "#34d399", r: 16 },
+      { name: "solar", px: 0.5, py: 0.56, col: "#fbbf24", r: 12 },
+      { name: "sacral", px: 0.5, py: 0.68, col: "#fb923c", r: 12 },
+      { name: "root", px: 0.5, py: 0.8, col: "#f87171", r: 13 },
     ];
 
     const NPART = 55;

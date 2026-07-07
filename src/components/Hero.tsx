@@ -8,9 +8,9 @@ const Hero = () => {
       <div className="absolute inset-0 -z-20">
         <ChakraCanvas />
       </div>
-      {/* Premium dark overlay for legibility */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#040410]/85 via-[#0a0620]/70 to-[#040410]/85"></div>
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#040410] via-transparent to-transparent"></div>
+      {/* Subtle overlay — keeps text legible while letting the animation shine */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#040410]/80 via-[#040410]/30 to-transparent"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#040410]/70 via-transparent to-[#040410]/40"></div>
 
       <div className="container mx-auto px-4 py-20">
         <div className="flex flex-col md:flex-row items-center gap-12">
