@@ -78,7 +78,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Contact Us</h2>
@@ -90,14 +90,14 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="bg-laso-cream/30 p-8 rounded-lg animate-fade-in-left">
-            <h3 className="text-2xl font-serif font-bold text-laso-darkgreen mb-6">
+          <div className="premium-glass p-8 rounded-2xl animate-fade-in-left">
+            <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-6">
               Our Healing Center
             </h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="mr-4 text-laso-purple">
+                <div className="mr-4 text-purple-300">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
@@ -107,7 +107,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 text-laso-purple">
+                <div className="mr-4 text-purple-300">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
@@ -119,7 +119,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 text-laso-purple">
+                <div className="mr-4 text-purple-300">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
@@ -129,8 +129,8 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="mt-8 p-6 bg-laso-lightpurple rounded-lg">
-              <h4 className="font-bold mb-3 text-laso-darkgreen">Online Consultations Available</h4>
+            <div className="mt-8 p-6 bg-purple-500/10 border border-purple-400/20 rounded-lg backdrop-blur-sm">
+              <h4 className="font-bold mb-3 text-emerald-300">Online Consultations Available</h4>
               <p>
                 We offer virtual consultations and distance healing sessions 
                 for clients worldwide.
@@ -138,8 +138,8 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-white shadow-lg rounded-lg p-8 animate-fade-in-right">
-            <h3 className="text-2xl font-serif font-bold text-laso-darkgreen mb-6">
+          <div className="premium-glass rounded-2xl p-8 animate-fade-in-right">
+            <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-6">
               Send Us a Message
             </h3>
             
@@ -207,12 +207,12 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-laso-purple hover:bg-laso-darkgreen text-white py-6 disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:from-purple-400 hover:to-fuchsia-400 text-white py-6 disabled:opacity-50 shadow-[0_0_40px_rgba(192,132,252,0.35)]"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
               
-              <p className="text-sm text-gray-600 text-center">
+              <p className="text-sm text-muted-foreground text-center">
                 Your information is secure and will be saved to our Google Sheets for follow-up.
               </p>
             </form>

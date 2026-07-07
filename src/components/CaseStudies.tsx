@@ -60,7 +60,7 @@ const CaseStudies = () => {
   const current = caseStudies[activeCase];
 
   return (
-    <section className="section-padding bg-laso-cream/20">
+    <section className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
@@ -80,8 +80,8 @@ const CaseStudies = () => {
               onClick={() => setActiveCase(i)}
               className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeCase === i
-                  ? "bg-laso-darkgreen text-white shadow-md"
-                  : "bg-white text-foreground border border-border hover:border-laso-purple/50"
+                  ? "bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white shadow-[0_0_30px_rgba(192,132,252,0.4)]"
+                  : "premium-glass text-foreground hover:border-purple-400/40"
               }`}
             >
               {cs.condition}
@@ -90,11 +90,11 @@ const CaseStudies = () => {
         </div>
 
         {/* Case detail */}
-        <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden animate-fade-in">
+        <div className="max-w-5xl mx-auto premium-glass rounded-2xl overflow-hidden animate-fade-in">
           <div className="p-6 md:p-10">
             {/* Patient info */}
             <div className="flex flex-wrap items-center gap-4 mb-8 text-sm text-muted-foreground">
-              <span className="bg-laso-lightpurple px-3 py-1 rounded-full font-medium text-laso-darkgreen">
+              <span className="bg-purple-500/15 border border-purple-400/25 px-3 py-1 rounded-full font-medium text-purple-200">
                 {current.patient}
               </span>
               <span className="flex items-center gap-1.5">
@@ -107,14 +107,14 @@ const CaseStudies = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Before */}
               <div className="relative">
-                <div className="absolute -top-2 left-4 bg-red-100 text-red-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                <div className="absolute -top-2 left-4 bg-rose-500/20 border border-rose-400/30 text-rose-200 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full backdrop-blur-sm">
                   Before Treatment
                 </div>
-                <div className="border-2 border-red-100 rounded-xl p-6 pt-8 space-y-3">
+                <div className="border-2 border-rose-400/20 bg-rose-500/5 rounded-xl p-6 pt-8 space-y-3">
                   {current.before.map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <ChevronRight className="w-4 h-4 text-red-400 mt-0.5 flex-shrink-0" />
-                      <p className="text-foreground">{item}</p>
+                      <ChevronRight className="w-4 h-4 text-rose-300 mt-0.5 flex-shrink-0" />
+                      <p className="text-foreground/90">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -122,14 +122,14 @@ const CaseStudies = () => {
 
               {/* After */}
               <div className="relative">
-                <div className="absolute -top-2 left-4 bg-green-100 text-green-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                <div className="absolute -top-2 left-4 bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full backdrop-blur-sm">
                   After Treatment
                 </div>
-                <div className="border-2 border-green-100 rounded-xl p-6 pt-8 space-y-3">
+                <div className="border-2 border-emerald-400/20 bg-emerald-500/5 rounded-xl p-6 pt-8 space-y-3">
                   {current.after.map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-foreground">{item}</p>
+                      <CheckCircle2 className="w-4 h-4 text-emerald-300 mt-0.5 flex-shrink-0" />
+                      <p className="text-foreground/90">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -137,7 +137,7 @@ const CaseStudies = () => {
             </div>
 
             {/* Patient quote */}
-            <blockquote className="mt-8 border-l-4 border-laso-purple pl-5 italic text-muted-foreground text-lg">
+            <blockquote className="mt-8 border-l-4 border-purple-400 pl-5 italic text-purple-100/80 text-lg">
               "{current.quote}"
             </blockquote>
           </div>

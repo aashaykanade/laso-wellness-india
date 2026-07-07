@@ -5,21 +5,21 @@ import { Button } from "@/components/ui/button";
 
 const ResultCard = ({ condition, improvement, details }: { condition: string; improvement: string; details: string }) => {
   return (
-    <Card className="p-6 border-none shadow-lg hover:shadow-xl transition-all duration-300">
+    <Card className="p-6 premium-glass hover:border-purple-400/30 hover:shadow-[0_20px_60px_-20px_rgba(139,92,246,0.5)] transition-all duration-300">
       <div className="flex items-start gap-4">
-        <div className="bg-laso-lightpurple p-3 rounded-full h-fit">
-          <Award className="text-laso-purple" size={24} />
+        <div className="bg-purple-500/15 border border-purple-400/20 p-3 rounded-full h-fit">
+          <Award className="text-purple-300" size={24} />
         </div>
         <div>
-          <h3 className="text-xl font-bold mb-2">{condition}</h3>
-          <div className="bg-gray-200 h-2 rounded-full mb-3">
+          <h3 className="text-xl font-bold mb-2 text-foreground">{condition}</h3>
+          <div className="bg-white/10 h-2 rounded-full mb-3 overflow-hidden">
             <div 
-              className="bg-laso-green h-2 rounded-full"
+              className="bg-gradient-to-r from-purple-400 to-emerald-400 h-2 rounded-full shadow-[0_0_12px_rgba(139,92,246,0.6)]"
               style={{ width: improvement }}
             ></div>
           </div>
-          <p className="text-sm text-gray-700 mb-2">{improvement} improvement observed</p>
-          <p className="text-gray-600">{details}</p>
+          <p className="text-sm text-purple-200 mb-2">{improvement} improvement observed</p>
+          <p className="text-muted-foreground">{details}</p>
         </div>
       </div>
     </Card>
@@ -28,7 +28,7 @@ const ResultCard = ({ condition, improvement, details }: { condition: string; im
 
 const Results = () => {
   return (
-    <section id="results" className="section-padding bg-gradient-to-b from-white to-laso-cream/30">
+    <section id="results" className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Documented Results</h2>
@@ -83,33 +83,33 @@ const Results = () => {
           />
         </div>
 
-        <div className="mt-16 bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
-          <h3 className="text-2xl font-serif font-bold text-laso-darkgreen mb-4">Our Research & Documentation</h3>
+        <div className="mt-16 premium-glass p-8 rounded-2xl max-w-3xl mx-auto">
+          <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-4">Our Research & Documentation</h3>
           <p className="mb-4">
             At Laso Wellness, we maintain detailed records of all client progress. Our results have been 
             documented through:
           </p>
           <ul className="space-y-2 mb-6">
             <li className="flex items-start">
-              <div className="w-2 h-2 rounded-full bg-laso-purple mt-2 mr-2 flex-shrink-0"></div>
+              <div className="w-2 h-2 rounded-full bg-purple-400 mt-2 mr-2 flex-shrink-0 shadow-[0_0_8px_rgba(192,132,252,0.8)]"></div>
               <span>Before and after medical assessments</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 rounded-full bg-laso-purple mt-2 mr-2 flex-shrink-0"></div>
+              <div className="w-2 h-2 rounded-full bg-purple-400 mt-2 mr-2 flex-shrink-0 shadow-[0_0_8px_rgba(192,132,252,0.8)]"></div>
               <span>Clinical measurements of physiological markers</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 rounded-full bg-laso-purple mt-2 mr-2 flex-shrink-0"></div>
+              <div className="w-2 h-2 rounded-full bg-purple-400 mt-2 mr-2 flex-shrink-0 shadow-[0_0_8px_rgba(192,132,252,0.8)]"></div>
               <span>Client symptom tracking and quality of life assessments</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 rounded-full bg-laso-purple mt-2 mr-2 flex-shrink-0"></div>
+              <div className="w-2 h-2 rounded-full bg-purple-400 mt-2 mr-2 flex-shrink-0 shadow-[0_0_8px_rgba(192,132,252,0.8)]"></div>
               <span>Follow-up consultations at 3, 6, and 12-month intervals</span>
             </li>
           </ul>
           <div className="text-center">
             <a href="#testimonials">
-              <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-5 py-2 text-md flex items-center gap-2">
+              <Button className="bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:from-purple-400 hover:to-fuchsia-400 text-white px-5 py-2 text-md flex items-center gap-2 shadow-[0_0_30px_rgba(192,132,252,0.3)]">
                 <Users size={18} />
                 View Patient Experiences
               </Button>

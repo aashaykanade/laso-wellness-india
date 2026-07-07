@@ -2,7 +2,7 @@ import { Leaf, Heart } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-laso-cream/20">
+    <section id="about" className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">About Laso Wellness</h2>
@@ -21,8 +21,8 @@ const About = () => {
                 alt="Human Energy Field and Chakras" 
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
-                <p className="font-serif italic text-laso-darkgreen">
+              <div className="absolute -bottom-5 -right-5 premium-glass p-4 rounded-lg max-w-xs">
+                <p className="font-serif italic text-purple-200">
                   "Whatever happens on the Subtle Etheric body of a human, is reflected in the Physical body"
                 </p>
               </div>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
 
           <div className="animate-fade-in-right">
-            <h3 className="text-2xl font-serif font-bold text-laso-darkgreen mb-6">
+            <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-6">
               Our Approach to Health & Wellness
             </h3>
             <p className="mb-6">
@@ -40,8 +40,8 @@ const About = () => {
 
             <div className="space-y-6">
               <div className="flex">
-                <div className="mr-4 bg-laso-lightpurple p-3 rounded-full h-fit">
-                  <Leaf className="text-laso-purple" size={24} />
+                <div className="mr-4 bg-purple-500/15 border border-purple-400/20 p-3 rounded-full h-fit">
+                  <Leaf className="text-purple-300" size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Ancient Indian Wisdom</h4>
@@ -53,8 +53,8 @@ const About = () => {
               </div>
 
               <div className="flex">
-                <div className="mr-4 bg-laso-lightpurple p-3 rounded-full h-fit">
-                  <Heart className="text-laso-purple" size={24} />
+                <div className="mr-4 bg-purple-500/15 border border-purple-400/20 p-3 rounded-full h-fit">
+                  <Heart className="text-purple-300" size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Advanced Energy Techniques</h4>
@@ -66,7 +66,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mt-8 p-4 bg-laso-lightpurple rounded-lg">
+            <div className="mt-8 p-4 premium-glass rounded-lg">
               <p className="italic">
                 "Our documented success with chronic conditions stems from our unique 
                 ability to identify and correct energy systems which heal the disease from the root"

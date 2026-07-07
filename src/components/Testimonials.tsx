@@ -60,7 +60,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding bg-laso-lightpurple/40">
+    <section id="testimonials" className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Client Testimonials</h2>
@@ -74,7 +74,7 @@ const Testimonials = () => {
           <div className="relative">
             <button 
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white rounded-full p-2 shadow-md hover:bg-laso-cream transition-colors md:-translate-x-12"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 premium-glass rounded-full p-2 hover:border-purple-400/40 text-white transition-colors md:-translate-x-12"
               aria-label="Previous testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -97,11 +97,11 @@ const Testimonials = () => {
                               <path d="M11.25 15H5.625C5.12772 15 4.65081 14.8025 4.29917 14.4508C3.94754 14.0992 3.75 13.6223 3.75 13.125V8.75C3.75 8.25272 3.94754 7.77581 4.29917 7.42417C4.65081 7.07254 5.12772 6.875 5.625 6.875H10C10.4973 6.875 10.9742 7.07254 11.3258 7.42417C11.6775 7.77581 11.875 8.25272 11.875 8.75V20.625C11.875 21.6196 11.4799 22.5734 10.7766 23.2766C10.0734 23.9799 9.11956 24.375 8.125 24.375H7.5V22.5H8.125C8.78532 22.5 9.41871 22.2366 9.8796 21.7679C10.3405 21.2992 10.6038 20.6658 10.6038 20.0055L11.25 15ZM24.375 15H18.75C18.2527 15 17.7758 14.8025 17.4242 14.4508C17.0725 14.0992 16.875 13.6223 16.875 13.125V8.75C16.875 8.25272 17.0725 7.77581 17.4242 7.42417C17.7758 7.07254 18.2527 6.875 18.75 6.875H23.125C23.6223 6.875 24.0992 7.07254 24.4508 7.42417C24.8025 7.77581 25 8.25272 25 8.75V20.625C25 21.6196 24.6049 22.5734 23.9016 23.2766C23.1984 23.9799 22.2446 24.375 21.25 24.375H20.625V22.5H21.25C21.9103 22.5 22.5437 22.2366 23.0046 21.7679C23.4655 21.2992 23.7288 20.6658 23.7288 20.0055L24.375 15Z" fill="#6E9975"/>
                             </svg>
                           </div>
-                          <p className="text-lg italic mb-6">{testimonial.quote}</p>
+                          <p className="text-lg italic mb-6 text-foreground/90">{testimonial.quote}</p>
                           <div>
-                            <h4 className="font-bold text-xl">{testimonial.name}</h4>
-                            <p className="text-laso-purple font-medium mt-1">Condition: {testimonial.condition}</p>
-                            <p className="text-sm text-gray-500 mt-2 italic">* Medical reports available for verification</p>
+                            <h4 className="font-bold text-xl text-foreground">{testimonial.name}</h4>
+                            <p className="text-purple-300 font-medium mt-1">Condition: {testimonial.condition}</p>
+                            <p className="text-sm text-muted-foreground mt-2 italic">* Medical reports available for verification</p>
                           </div>
                         </div>
                       </Card>
@@ -113,7 +113,7 @@ const Testimonials = () => {
             
             <button 
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white rounded-full p-2 shadow-md hover:bg-laso-cream transition-colors md:translate-x-12"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 premium-glass rounded-full p-2 hover:border-purple-400/40 text-white transition-colors md:translate-x-12"
               aria-label="Next testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -128,7 +128,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === activeIndex ? "bg-laso-purple" : "bg-gray-300"
+                  index === activeIndex ? "bg-purple-400 shadow-[0_0_10px_rgba(192,132,252,0.8)]" : "bg-white/20"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
