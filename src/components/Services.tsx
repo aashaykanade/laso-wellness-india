@@ -6,21 +6,21 @@ import ethericBodyHealing from "@/assets/etheric-body-healing.jpg";
 
 const ServiceCard = ({ title, description, icon, image }: { title: string; description: string; icon: React.ReactNode; image: string }) => {
   return (
-    <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white/90 backdrop-blur-sm border-none">
+    <Card className="p-6 transition-all duration-300 hover:-translate-y-1 premium-glass hover:border-purple-400/30 hover:shadow-[0_20px_60px_-20px_rgba(139,92,246,0.5)]">
       <div className="flex items-start gap-4">
         <img 
           src={image} 
           alt={title} 
-          className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+          className="w-16 h-16 rounded-lg object-cover flex-shrink-0 ring-1 ring-white/10"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
-            <div className="bg-laso-lightpurple p-2 rounded-full flex items-center justify-center">
+            <div className="bg-purple-500/15 border border-purple-400/20 p-2 rounded-full flex items-center justify-center">
               {icon}
             </div>
-            <h3 className="text-lg font-serif font-bold">{title}</h3>
+            <h3 className="text-lg font-serif font-bold text-foreground">{title}</h3>
           </div>
-          <p className="text-gray-700 text-sm">{description}</p>
+          <p className="text-muted-foreground text-sm">{description}</p>
         </div>
       </div>
     </Card>
@@ -29,9 +29,9 @@ const ServiceCard = ({ title, description, icon, image }: { title: string; descr
 
 const Services = () => {
   return (
-    <section id="services" className="section-padding relative">
+    <section id="services" className="section-padding relative premium-section">
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-5 -z-10" 
+        className="absolute inset-0 bg-cover bg-center opacity-[0.04] -z-10 mix-blend-luminosity" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80')" }}
       ></div>
       
@@ -91,7 +91,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <a href="#contact">
-            <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white px-8 py-6 text-lg">
+            <Button className="bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:from-purple-400 hover:to-fuchsia-400 text-white px-8 py-6 text-lg shadow-[0_0_40px_rgba(192,132,252,0.35)]">
               Request Clinic Appointment
             </Button>
           </a>
