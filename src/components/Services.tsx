@@ -37,10 +37,11 @@ const Services = () => {
       
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Our Healing Services</h2>
-          <div className="w-20 h-1 bg-laso-purple mx-auto mb-6"></div>
-          <p className="text-lg">
-            Discover our range of specialized energy healing services designed to address 
+          <p className="eyebrow mb-5">Chapter II — The Practice</p>
+          <h2 className="section-title mb-6">Our Healing <span className="italic">Services</span></h2>
+          <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
+          <p className="text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
+            Discover our range of specialized energy healing services designed to address
             chronic conditions and promote overall wellness.
           </p>
         </div>
@@ -89,11 +90,9 @@ const Services = () => {
           />
         </div>
 
-        <div className="text-center mt-12">
-          <a href="#contact">
-            <Button className="bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:from-purple-400 hover:to-fuchsia-400 text-white px-8 py-6 text-lg shadow-[0_0_40px_rgba(192,132,252,0.35)]">
-              Request Clinic Appointment
-            </Button>
+        <div className="text-center mt-16">
+          <a href="#contact" className="btn-gold-solid">
+            Request Clinic Appointment
           </a>
         </div>
       </div>
