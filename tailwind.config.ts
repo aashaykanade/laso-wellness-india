@@ -72,8 +72,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				'sans': ['Poppins', 'sans-serif'],
-				'serif': ['Playfair Display', 'serif'],
+				'sans': ['Karla', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				'serif': ['"Cormorant Garamond"', 'ui-serif', 'Georgia', 'serif'],
+				'display': ['"Cormorant Garamond"', 'ui-serif', 'Georgia', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

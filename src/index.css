@@ -1,51 +1,54 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Premium dark theme — deep cosmic navy with purple/emerald accents */
-    --background: 245 55% 5%;
-    --foreground: 260 25% 96%;
+    /* Noir & Amethyst — luxury editorial */
+    /* bg #0a0714, surface #1a0f2e, amethyst #8b5cf6, gold #d4af37, ivory #f5f0e0 */
+    --background: 258 52% 5%;
+    --foreground: 45 56% 92%;
 
-    --card: 255 40% 9%;
-    --card-foreground: 260 25% 96%;
+    --card: 258 50% 12%;
+    --card-foreground: 45 56% 92%;
 
-    --popover: 255 40% 9%;
-    --popover-foreground: 260 25% 96%;
+    --popover: 258 50% 12%;
+    --popover-foreground: 45 56% 92%;
 
-    --primary: 270 85% 72%;
-    --primary-foreground: 245 55% 6%;
+    --primary: 46 65% 52%;         /* gold — the true luxury accent */
+    --primary-foreground: 258 52% 5%;
 
-    --secondary: 255 30% 14%;
-    --secondary-foreground: 260 25% 96%;
+    --secondary: 258 50% 12%;
+    --secondary-foreground: 45 56% 92%;
 
-    --muted: 255 28% 12%;
-    --muted-foreground: 260 15% 72%;
+    --muted: 258 40% 10%;
+    --muted-foreground: 45 20% 72%;
 
-    --accent: 255 35% 14%;
-    --accent-foreground: 260 25% 96%;
+    --accent: 258 90% 66%;         /* amethyst — mystical accent */
+    --accent-foreground: 45 56% 92%;
 
     --destructive: 0 72% 55%;
-    --destructive-foreground: 260 25% 96%;
+    --destructive-foreground: 45 56% 92%;
 
-    --border: 260 30% 18%;
-    --input: 260 30% 18%;
-    --ring: 270 85% 72%;
+    --border: 46 40% 30%;
+    --input: 258 40% 18%;
+    --ring: 46 65% 52%;
 
-    --radius: 0.5rem;
+    --radius: 0.125rem;            /* editorial — squared corners */
 
-    --sidebar-background: 245 55% 5%;
-    --sidebar-foreground: 260 25% 90%;
-    --sidebar-primary: 270 85% 72%;
-    --sidebar-primary-foreground: 245 55% 6%;
-    --sidebar-accent: 255 30% 12%;
-    --sidebar-accent-foreground: 260 25% 96%;
-    --sidebar-border: 260 30% 18%;
-    --sidebar-ring: 270 85% 72%;
+    --gold: 46 65% 52%;
+    --gold-soft: 46 55% 65%;
+    --amethyst: 258 90% 66%;
+    --ivory: 45 56% 92%;
+
+    --sidebar-background: 258 52% 5%;
+    --sidebar-foreground: 45 40% 88%;
+    --sidebar-primary: 46 65% 52%;
+    --sidebar-primary-foreground: 258 52% 5%;
+    --sidebar-accent: 258 50% 12%;
+    --sidebar-accent-foreground: 45 56% 92%;
+    --sidebar-border: 258 40% 18%;
+    --sidebar-ring: 46 65% 52%;
   }
 }
 
@@ -55,49 +58,106 @@
   }
 
   html, body {
-    @apply text-foreground font-sans;
+    @apply text-foreground;
+    font-family: 'Karla', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.005em;
     background:
       radial-gradient(1200px 700px at 85% -10%, rgba(139, 92, 246, 0.18), transparent 60%),
-      radial-gradient(900px 600px at -10% 20%, rgba(110, 231, 183, 0.10), transparent 60%),
-      radial-gradient(1000px 800px at 50% 110%, rgba(217, 70, 239, 0.12), transparent 65%),
-      linear-gradient(180deg, #050318 0%, #07061a 40%, #040410 100%);
+      radial-gradient(900px 600px at -10% 20%, rgba(212, 175, 55, 0.06), transparent 60%),
+      radial-gradient(1000px 800px at 50% 110%, rgba(139, 92, 246, 0.10), transparent 65%),
+      linear-gradient(180deg, #0a0714 0%, #0d0820 40%, #0a0714 100%);
     background-attachment: fixed;
     color: hsl(var(--foreground));
   }
 
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: hsl(var(--amethyst) / 0.35);
+    color: hsl(var(--ivory));
+  }
+
   .section-padding {
-    @apply py-16 px-4 md:py-24 md:px-8 lg:px-16;
+    @apply py-20 px-4 md:py-28 md:px-8 lg:px-16;
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.18) 0%, rgba(16, 185, 129, 0.14) 100%);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.14) 0%, rgba(212, 175, 55, 0.08) 100%);
   }
 
   .testimonial-card {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(16, 185, 129, 0.06) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg, rgba(26, 15, 46, 0.85) 0%, rgba(10, 7, 20, 0.85) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.18);
     color: hsl(var(--foreground));
     backdrop-filter: blur(14px);
   }
 }
 
 @layer components {
+  .eyebrow {
+    @apply text-[10px] md:text-xs uppercase font-medium;
+    color: hsl(var(--gold));
+    letter-spacing: 0.35em;
+  }
+
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.7), transparent);
+  }
+
+  .gold-hairline {
+    border-color: hsl(var(--gold) / 0.2);
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-4 uppercase text-xs font-medium transition-colors duration-500 border;
+    letter-spacing: 0.3em;
+    border-color: hsl(var(--gold) / 0.4);
+    color: hsl(var(--ivory));
+    background: transparent;
+  }
+  .btn-gold:hover {
+    border-color: hsl(var(--gold));
+    background: hsl(var(--gold) / 0.06);
+    color: hsl(var(--ivory));
+  }
+
+  .btn-gold-solid {
+    @apply inline-flex items-center justify-center px-10 py-4 uppercase text-xs font-semibold transition-colors duration-500;
+    letter-spacing: 0.3em;
+    background: hsl(var(--gold));
+    color: hsl(var(--background));
+  }
+  .btn-gold-solid:hover {
+    background: hsl(var(--ivory));
+  }
+
   .premium-glass {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(26, 15, 46, 0.55);
+    border: 1px solid rgba(212, 175, 55, 0.14);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.6), 0 0 40px -20px rgba(139, 92, 246, 0.35);
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.7);
   }
 
   .premium-section {
     position: relative;
     background:
-      radial-gradient(600px 400px at 15% 10%, rgba(139, 92, 246, 0.10), transparent 60%),
-      radial-gradient(700px 500px at 90% 90%, rgba(16, 185, 129, 0.08), transparent 60%);
+      radial-gradient(600px 400px at 15% 10%, rgba(139, 92, 246, 0.08), transparent 60%),
+      radial-gradient(700px 500px at 90% 90%, rgba(212, 175, 55, 0.05), transparent 60%);
   }
 
   .premium-divider {
-    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.8), rgba(16, 185, 129, 0.6), transparent);
+    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.7), hsl(var(--amethyst) / 0.5), transparent);
+  }
+
+  .section-title {
+    @apply font-serif italic font-light text-4xl md:text-5xl lg:text-6xl leading-[1.05];
+    color: hsl(var(--ivory));
   }
 }

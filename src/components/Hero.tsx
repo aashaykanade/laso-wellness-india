@@ -1,85 +1,85 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import ChakraCanvas from "@/components/ChakraCanvas";
+
+const conditions = [
+  "Skeletal Disorders",
+  "Addiction & Depression",
+  "Skin Conditions",
+  "Parkinson's",
+  "Hypertension",
+  "Chronic Fatigue",
+];
 
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-20 flex items-center relative isolate overflow-hidden bg-[#040410]">
-      {/* Animated chakra canvas background */}
+    <section className="relative min-h-screen pt-24 flex flex-col justify-center isolate overflow-hidden">
+      {/* Chakra animation */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <ChakraCanvas />
       </div>
-      {/* Subtle overlay — keeps text legible while letting the animation shine */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-[#040410]/55 via-[#040410]/10 to-transparent"></div>
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#040410]/45 via-transparent to-[#040410]/15"></div>
+      {/* Deep vignette for editorial legibility */}
+      <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(10,7,20,0.85)_100%)]" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-[#0a0714]/70 via-transparent to-[#0a0714]/80" />
 
-      <div className="container mx-auto px-4 py-20 relative z-20">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2 animate-fade-in-left">
-            <p className="text-xs md:text-sm tracking-[0.35em] text-purple-300/70 uppercase mb-5 font-light">
-              Laso Wellness
-            </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-6 text-white">
-              Get Cured from Root. <br />
-              <span className="bg-gradient-to-r from-purple-300 via-fuchsia-200 to-emerald-300 bg-clip-text text-transparent">
-                Fix your Health
-              </span>
-            </h1>
-            <p className="text-base md:text-lg mb-8 max-w-xl text-white/75 leading-relaxed">
-              Experience transformative Energy Healing and Allied Therapies that have helped countless individuals overcome
-              chronic conditions like Parkinson's and Diabetes. At Laso Wellness, we blend ancient wisdom with modern techniques.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contact">
-                <Button className="bg-white text-[#040410] hover:bg-white/90 px-8 py-6 text-base font-medium shadow-[0_0_40px_rgba(192,132,252,0.35)]">
-                  Book Clinic Appointment
-                </Button>
-              </a>
-              <a href="#services">
-                <Button
-                  variant="outline"
-                  className="border-white/30 bg-white/5 backdrop-blur text-white hover:bg-white/10 hover:text-white px-8 py-6 text-base font-medium"
-                >
-                  Learn More
-                </Button>
-              </a>
-            </div>
-          </div>
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-20 py-16 md:py-20">
+        {/* Masthead eyebrow */}
+        <div className="flex items-center gap-4 mb-8">
+          <span className="w-10 h-px bg-[hsl(var(--gold))]/70" />
+          <span className="eyebrow">Laso Wellness — Est. Pune, India</span>
+        </div>
 
-          <div className="md:w-1/2 mt-12 md:mt-0 animate-fade-in-right w-full">
-            <div className="relative">
-              <div className="bg-white/[0.06] border border-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-7 md:p-9 relative z-10">
-                <p className="text-xs tracking-[0.3em] text-purple-300/70 uppercase mb-2 font-light">Proven Results</p>
-                <h3 className="text-2xl font-serif font-semibold text-white mb-5">
-                  Conditions We Heal
-                </h3>
-                <ul className="space-y-3.5">
-                  {[
-                    "Skeletal Disorders",
-                    "Addiction and Depression",
-                    "Skin Conditions",
-                    "Parkinson's",
-                    "Hypertension",
-                    "And more...",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center text-white/85">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-400 to-emerald-400 mr-3 shadow-[0_0_8px_rgba(192,132,252,0.8)]"></span>
-                      <span className="text-[15px]">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-6 pt-5 border-t border-white/10 text-center">
-                  <a
-                    href="#testimonials"
-                    className="text-purple-300 hover:text-white font-medium text-sm tracking-wide transition-colors"
-                  >
-                    View Patient Experiences →
-                  </a>
-                </div>
-              </div>
-              <div className="absolute -inset-1 bg-gradient-to-br from-purple-500/20 via-fuchsia-500/10 to-emerald-500/20 rounded-2xl blur-2xl -z-10"></div>
+        <div className="max-w-6xl">
+          <h1 className="font-serif font-light leading-[0.95] text-5xl md:text-7xl lg:text-8xl text-[hsl(var(--ivory))]">
+            <span className="italic">Get Cured</span> from Root.
+            <br />
+            <span className="text-[hsl(var(--ivory))]/85">Restore your Health.</span>
+          </h1>
+
+          <div className="flex flex-col md:flex-row md:items-end gap-10 md:gap-16 mt-12 md:mt-16">
+            <p className="max-w-md text-base md:text-lg text-[hsl(var(--ivory))]/70 leading-relaxed font-light">
+              Under the guidance of <em className="not-italic text-[hsl(var(--gold-soft))]">Dr. Yashwant Kanade</em>, Laso Wellness facilitates deep-field
+              energetic restoration — harmonising the subtle body to resolve chronic conditions the physical layer alone cannot reach.
+            </p>
+
+            <div className="flex flex-col gap-3">
+              <a href="#contact" className="group">
+                <span className="btn-gold">
+                  Inquire for Consultation
+                  <ArrowRight className="ml-4 w-4 h-4 text-[hsl(var(--gold))] transition-transform group-hover:translate-x-1" />
+                </span>
+              </a>
+              <p className="text-[10px] uppercase tracking-[0.35em] text-[hsl(var(--ivory))]/40 text-center italic font-light">
+                Strictly by clinic appointment
+              </p>
             </div>
           </div>
         </div>
+
+        {/* Editorial ledger — conditions as an index */}
+        <div className="mt-20 md:mt-24 border-t border-[hsl(var(--gold))]/20 pt-10">
+          <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-8 gap-4">
+            <h2 className="font-serif italic text-2xl md:text-3xl text-[hsl(var(--ivory))]/95">Conditions we address</h2>
+            <a href="#testimonials" className="eyebrow hover:text-[hsl(var(--ivory))] transition-colors">
+              Patient Experiences →
+            </a>
+          </div>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12">
+            {conditions.map((item, i) => (
+              <li key={item} className="group flex items-center justify-between border-b border-[hsl(var(--ivory))]/10 py-4 hover:border-[hsl(var(--gold))]/60 transition-colors">
+                <span className="font-serif text-lg md:text-xl text-[hsl(var(--ivory))]/90">{item}</span>
+                <span className="text-[10px] tracking-[0.3em] uppercase text-[hsl(var(--ivory))]/40">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Scroll rule */}
+      <div className="absolute bottom-10 left-8 md:left-16 hidden lg:block z-20">
+        <div className="w-px h-20 bg-gradient-to-b from-[hsl(var(--gold))]/0 via-[hsl(var(--gold))]/60 to-[hsl(var(--gold))]/0" />
       </div>
     </section>
   );
