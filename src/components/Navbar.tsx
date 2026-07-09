@@ -34,43 +34,60 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
-          <a href="/#about" className="font-medium hover:text-laso-purple transition-colors">About</a>
-          <a href="/#services" className="font-medium hover:text-laso-purple transition-colors">Services</a>
-          <a href="/#results" className="font-medium hover:text-laso-purple transition-colors">Results</a>
-          <a href="/#testimonials" className="font-medium hover:text-laso-purple transition-colors">Testimonials</a>
-          <a href="/blog" className="font-medium hover:text-laso-purple transition-colors">Blog</a>
-          <a href="/#contact" className="font-medium hover:text-laso-purple transition-colors">Contact</a>
+        <div className="hidden md:flex items-center space-x-9">
+          {[
+            { href: "/#about", label: "About" },
+            { href: "/#services", label: "Practice" },
+            { href: "/#results", label: "Results" },
+            { href: "/#testimonials", label: "Testimonials" },
+            { href: "/blog", label: "Journal" },
+            { href: "/#contact", label: "Contact" },
+          ].map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              className="text-[11px] uppercase tracking-[0.28em] text-[hsl(var(--ivory))]/75 hover:text-[hsl(var(--gold))] transition-colors"
+            >
+              {l.label}
+            </a>
+          ))}
         </div>
 
         <div className="hidden md:block">
-          <a href="#contact">
-            <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white">
-              Clinic Appointments Only
-            </Button>
+          <a href="#contact" className="btn-gold">
+            By Appointment
           </a>
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-white/80" onClick={toggleMenu}>
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        <button className="md:hidden text-[hsl(var(--ivory))]/80" onClick={toggleMenu} aria-label="Menu">
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#05041a]/95 backdrop-blur-xl border-t border-white/10 shadow-2xl">
-          <div className="flex flex-col py-4 space-y-4 px-4">
-            <a href="/#about" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>About</a>
-            <a href="/#services" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Services</a>
-            <a href="/#results" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Results</a>
-            <a href="/#testimonials" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Testimonials</a>
-            <a href="/blog" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Blog</a>
-            <a href="/#contact" className="font-medium hover:text-laso-purple transition-colors" onClick={toggleMenu}>Contact</a>
-            <a href="#contact" className="w-full" onClick={toggleMenu}>
-              <Button className="bg-laso-purple hover:bg-laso-darkgreen text-white w-full">
-                Book Clinic Appointment
-              </Button>
+        <div className="md:hidden bg-[#0a0714]/95 backdrop-blur-xl border-t border-[hsl(var(--gold))]/20 shadow-2xl">
+          <div className="flex flex-col py-6 space-y-5 px-6">
+            {[
+              { href: "/#about", label: "About" },
+              { href: "/#services", label: "Practice" },
+              { href: "/#results", label: "Results" },
+              { href: "/#testimonials", label: "Testimonials" },
+              { href: "/blog", label: "Journal" },
+              { href: "/#contact", label: "Contact" },
+            ].map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={toggleMenu}
+                className="text-[11px] uppercase tracking-[0.28em] text-[hsl(var(--ivory))]/80 hover:text-[hsl(var(--gold))] transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
+            <a href="#contact" className="btn-gold w-full justify-center" onClick={toggleMenu}>
+              By Appointment
             </a>
           </div>
         </div>
