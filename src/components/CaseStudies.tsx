@@ -63,10 +63,9 @@ const CaseStudies = () => {
     <section className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-            Real Patient Transformations
-          </h2>
-          <div className="w-20 h-1 bg-laso-purple mx-auto mb-6"></div>
+          <p className="eyebrow mb-5">Chapter III — Case Studies</p>
+          <h2 className="section-title mb-6">Real Patient <span className="italic">Transformations</span></h2>
+          <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground">
             Treated by <strong>Dr. Yashwant Kanade</strong>, <span className="italic">MD, Alternative Medicine</span> — real cases from our clinic. Names withheld for privacy, but outcomes speak for themselves.
           </p>

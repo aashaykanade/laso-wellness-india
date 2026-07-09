@@ -31,8 +31,9 @@ const Results = () => {
     <section id="results" className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Documented Results</h2>
-          <div className="w-20 h-1 bg-laso-purple mx-auto mb-6"></div>
+          <p className="eyebrow mb-5">Chapter IV — Evidence</p>
+          <h2 className="section-title mb-6">Documented <span className="italic">Results</span></h2>
+          <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
           <p className="text-lg">
             Our energy healing methodologies have produced remarkable improvements in various chronic conditions. 
             These results have been documented and verified through medical reports.
