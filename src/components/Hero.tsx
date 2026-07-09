@@ -2,13 +2,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import ChakraCanvas from "@/components/ChakraCanvas";
 
-const conditions = [
-  "Skeletal Disorders",
-  "Addiction & Depression",
-  "Skin Conditions",
-  "Parkinson's",
-  "Hypertension",
-  "Chronic Fatigue",
+const conditionGroups = [
+  {
+    label: "Physical",
+    items: ["Skeletal Disorders", "Skin Conditions", "Hypertension"],
+  },
+  {
+    label: "Psychological",
+    items: ["Addiction", "Depression", "Parkinson's"],
+  },
 ];
 
 const Hero = () => {
@@ -64,16 +66,38 @@ const Hero = () => {
               Patient Experiences →
             </a>
           </div>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12">
-            {conditions.map((item, i) => (
-              <li key={item} className="group flex items-center justify-between border-b border-[hsl(var(--ivory))]/10 py-4 hover:border-[hsl(var(--gold))]/60 transition-colors">
-                <span className="font-serif text-lg md:text-xl text-[hsl(var(--ivory))]/90">{item}</span>
-                <span className="text-[10px] tracking-[0.3em] uppercase text-[hsl(var(--ivory))]/40">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-              </li>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+            {conditionGroups.map((group, gi) => (
+              <div key={group.label}>
+                <div className="flex items-baseline justify-between mb-4">
+                  <p className="eyebrow">{group.label}</p>
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-[hsl(var(--ivory))]/40">
+                    {String(gi + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <ul>
+                  {group.items.map((item, i) => (
+                    <li
+                      key={item}
+                      className="group flex items-center justify-between border-b border-[hsl(var(--ivory))]/10 py-3.5 hover:border-[hsl(var(--gold))]/60 transition-colors"
+                    >
+                      <span className="font-serif text-lg md:text-xl text-[hsl(var(--ivory))]/90">
+                        {item}
+                      </span>
+                      <span className="text-[10px] tracking-[0.3em] uppercase text-[hsl(var(--ivory))]/40">
+                        {String(gi * 3 + i + 1).padStart(2, "0")}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
+          <div className="mt-8 flex items-center justify-center gap-3 text-[hsl(var(--ivory))]/50">
+            <span className="w-8 h-px bg-[hsl(var(--gold))]/40" />
+            <span className="font-serif italic text-base md:text-lg">And more…</span>
+            <span className="w-8 h-px bg-[hsl(var(--gold))]/40" />
+          </div>
         </div>
       </div>
 
