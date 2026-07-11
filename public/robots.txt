@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://laso-wellbeing-glow-india.lovable.app/sitemap.xml
