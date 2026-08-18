@@ -63,7 +63,7 @@ const Testimonials = () => {
     <section id="testimonials" className="section-padding premium-section">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <p className="eyebrow mb-5">Chapter V — Voices</p>
+          <p className="eyebrow mb-5">Chapter VI — Voices</p>
           <h2 className="section-title mb-6">Client <span className="italic">Testimonials</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
           <p className="text-lg">
