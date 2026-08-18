@@ -5,6 +5,7 @@ import AsSeenIn from "@/components/AsSeenIn";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Results from "@/components/Results";
+import Research from "@/components/Research";
 import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 import Contact from "@/components/Contact";
