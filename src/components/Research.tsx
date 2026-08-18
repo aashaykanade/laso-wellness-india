@@ -94,7 +94,7 @@ const Research = () => {
           <h2 className="section-title mb-6">Published <span className="italic">Research</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
           <p className="text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
-            Peer-reviewed research and publications by <strong>Dr. Yashwant Kanade</strong> documenting the efficacy of energy healing and alternative medicine across chronic conditions.
+            Peer-reviewed research documenting the efficacy of energy healing (Pranic Healing) across both psychological and physical conditions — published in indexed medical journals.
           </p>
         </div>
 
