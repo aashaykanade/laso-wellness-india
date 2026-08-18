@@ -39,8 +39,8 @@ const Navbar = () => {
             { href: "/#about", label: "About" },
             { href: "/#services", label: "Practice" },
             { href: "/#results", label: "Results" },
+            { href: "/#research", label: "Research" },
             { href: "/#testimonials", label: "Testimonials" },
-            { href: "/blog", label: "Journal" },
             { href: "/#contact", label: "Contact" },
           ].map((l) => (
             <a
