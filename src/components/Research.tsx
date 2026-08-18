@@ -112,15 +112,22 @@ const Research = () => {
           <h2 className="section-title mb-6">Published <span className="italic">Research</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
           <p className="text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
-            Peer-reviewed research documenting the efficacy of energy healing (Pranic Healing) across both psychological and physical conditions — published in indexed medical journals.
+            Peer-reviewed research documenting the efficacy of energy healing across both psychological and physical conditions — published in indexed medical journals.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {researchPapers.map((paper) => (
-            <ResearchCard key={paper.id} paper={paper} />
-          ))}
-        </div>
+        <Carousel opts={{ align: "start", loop: true }} className="w-full">
+          <CarouselContent className="-ml-8">
+            {researchPapers.map((paper) => (
+              <CarouselItem key={paper.id} className="pl-8 md:basis-1/2 lg:basis-1/3">
+                <ResearchCard paper={paper} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-4 bg-transparent border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))]/10 hover:text-[hsl(var(--gold))]" />
+          <CarouselNext className="hidden md:flex -right-4 bg-transparent border-[hsl(var(--gold))]/40 text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))]/10 hover:text-[hsl(var(--gold))]" />
+        </Carousel>
+
 
         <p className="text-center mt-10 text-sm text-muted-foreground">
           Medical reports available for verification upon request.
