@@ -1,5 +1,12 @@
 
 import { FileText, ExternalLink, BookOpen } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface ResearchPaper {
   id: number;
@@ -14,35 +21,46 @@ interface ResearchPaper {
 const researchPapers: ResearchPaper[] = [
   {
     id: 1,
-    title: "Amelioration of mild and moderate depression through Pranic Healing as adjuvant therapy: a randomised double-blind controlled trial",
+    title: "Amelioration of mild and moderate depression through energy healing as adjuvant therapy: a randomised double-blind controlled trial",
     authors: "R Rajagopal, Srikanth N Jois, Sumanth M Majgi, MN Anil Kumar, HB Shashidhar",
     journal: "Australas Psychiatry · Vol 26(1), 82–87",
     year: "2017",
     abstract:
-      "A randomised double-blind controlled trial of 52 participants with mild-to-moderate depression found that Pranic Healing as an adjuvant to antidepressants produced a significantly greater reduction in Hamilton Depression (HAM-D) scores than mock healing — with 100% of the Pranic Healing group improving in depression category versus 69.2% in the control group.",
+      "A randomised double-blind controlled trial of 52 participants with mild-to-moderate depression found that energy healing as an adjuvant to antidepressants produced a significantly greater reduction in Hamilton Depression (HAM-D) scores than mock healing — with 100% of the energy healing group improving in depression category versus 69.2% in the control group.",
     link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5802541/",
   },
   {
     id: 2,
-    title: "Assessing the Cytotoxicity and Wound Healing Potential of Pranic Healing Colours: An in vitro Study on HaCaT Cell Line",
+    title: "Assessing the Cytotoxicity and Wound Healing Potential of Energy Healing Colours: An in vitro Study on HaCaT Cell Line",
     authors: "Srikanth N Jois, Rakesh R Rahangdale, Vinu Vijayakumar, Raghu C Hariharapura, Nagendra Prasad K",
     journal: "Indian Journal of Pharmaceutical Education and Research · Vol 59(2), 777–782",
     year: "2025",
     abstract:
-      "An in vitro study on HaCaT cells demonstrating that Pranic Healing colours are non-cytotoxic and that combinations of Pranic colours were more effective than single colours in promoting wound healing — underscoring the potential of biofield therapy to enhance cell health and tissue repair.",
+      "An in vitro study on HaCaT cells demonstrating that energy healing colours are non-cytotoxic and that combinations of colours were more effective than single colours in promoting wound healing — underscoring the potential of biofield therapy to enhance cell health and tissue repair.",
     link: "https://doi.org/10.5530/ijper.20250945",
   },
   {
     id: 3,
-    title: "Effect of Pranic Healing as a complementary therapy for benign prostatic hyperplasia (BPH) with lower urinary tract symptoms",
+    title: "Effect of energy healing as a complementary therapy for benign prostatic hyperplasia (BPH) with lower urinary tract symptoms",
     authors: "Roopa Nanjundaswamy, Narendra J B, Vinu Vijayakumar, Srikanth N Jois, K Nagendra Prasad",
     journal: "Complementary Therapies in Medicine · Vol 84, Article 103067",
     year: "2024",
     abstract:
-      "A single-blind trial of 76 men with BPH-related urinary symptoms showed that medication plus Pranic Healing (MEDPH) significantly improved IPSS scores, reduced incomplete bladder emptying, and improved sleep quality versus medication alone — suggesting Pranic Healing can alleviate LUTS and enhance quality of life in moderate BPH patients.",
+      "A single-blind trial of 76 men with BPH-related urinary symptoms showed that medication plus energy healing significantly improved IPSS scores, reduced incomplete bladder emptying, and improved sleep quality versus medication alone — suggesting energy healing can alleviate LUTS and enhance quality of life in moderate BPH patients.",
     link: "https://pubmed.ncbi.nlm.nih.gov/39033882/",
   },
+  {
+    id: 4,
+    title: "Energy Healing Research Compendium: an indexed archive of clinical and laboratory studies",
+    authors: "Multiple institutional research groups",
+    journal: "Research Archive · Peer-reviewed & conference studies",
+    year: "Ongoing",
+    abstract:
+      "A continually updated archive of clinical trials, laboratory experiments and case reports examining the effects of energy healing on conditions ranging from anxiety and hypertension to wound recovery and post-operative pain — compiled from studies published across indexed journals worldwide.",
+    link: "https://www.worldpranichealing.com/magazine/research",
+  },
 ];
+
 
 const ResearchCard = ({ paper }: { paper: ResearchPaper }) => {
   return (
