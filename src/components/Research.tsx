@@ -111,7 +111,7 @@ const Research = () => {
           <p className="eyebrow mb-5">Chapter V — Research</p>
           <h2 className="section-title mb-6">Published <span className="italic">Research</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
-          <p className="text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
+          <p className="text-base md:text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
             Peer-reviewed research documenting the efficacy of energy healing across both psychological and physical conditions — published in indexed medical journals.
           </p>
         </div>

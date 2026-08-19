@@ -40,7 +40,7 @@ const Services = () => {
           <p className="eyebrow mb-5">Chapter II — The Practice</p>
           <h2 className="section-title mb-6">Our Healing <span className="italic">Services</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
-          <p className="text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
+          <p className="text-base md:text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
             Discover our range of specialized energy healing services designed to address
             chronic conditions and promote overall wellness.
           </p>
