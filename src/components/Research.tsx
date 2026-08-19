@@ -64,7 +64,7 @@ const researchPapers: ResearchPaper[] = [
 
 const ResearchCard = ({ paper }: { paper: ResearchPaper }) => {
   return (
-    <div className="premium-glass rounded-lg p-7 flex flex-col h-full transition-all duration-300 hover:border-[hsl(var(--gold))]/40 hover:shadow-[0_20px_60px_-20px_rgba(212,175,55,0.35)]">
+    <div className="premium-glass rounded-lg p-6 md:p-7 flex flex-col h-full transition-all duration-300 hover:border-[hsl(var(--gold))]/40 hover:shadow-[0_20px_60px_-20px_rgba(212,175,55,0.35)]">
       <div className="flex items-start justify-between gap-4 mb-5">
         <div className="bg-purple-500/15 border border-purple-400/20 p-3 rounded-full h-fit">
           <FileText className="text-purple-300" size={22} />
@@ -107,11 +107,11 @@ const Research = () => {
   return (
     <section id="research" className="section-padding premium-section">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 animate-fade-in">
           <p className="eyebrow mb-5">Chapter V — Research</p>
           <h2 className="section-title mb-6">Published <span className="italic">Research</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
-          <p className="text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
+          <p className="text-base md:text-lg text-[hsl(var(--ivory))]/75 font-light leading-relaxed">
             Peer-reviewed research documenting the efficacy of energy healing across both psychological and physical conditions — published in indexed medical journals.
           </p>
         </div>

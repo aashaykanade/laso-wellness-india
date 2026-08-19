@@ -103,13 +103,13 @@ const CaseStudies = () => {
             </div>
 
             {/* Before / After grid */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-8">
               {/* Before */}
               <div className="relative">
                 <div className="absolute -top-2 left-4 bg-rose-500/20 border border-rose-400/30 text-rose-200 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full backdrop-blur-sm">
                   Before Treatment
                 </div>
-                <div className="border-2 border-rose-400/20 bg-rose-500/5 rounded-xl p-6 pt-8 space-y-3">
+                <div className="border-2 border-rose-400/20 bg-rose-500/5 rounded-xl p-5 md:p-6 pt-7 md:pt-8 space-y-3">
                   {current.before.map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 text-rose-300 mt-0.5 flex-shrink-0" />
@@ -124,7 +124,7 @@ const CaseStudies = () => {
                 <div className="absolute -top-2 left-4 bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full backdrop-blur-sm">
                   After Treatment
                 </div>
-                <div className="border-2 border-emerald-400/20 bg-emerald-500/5 rounded-xl p-6 pt-8 space-y-3">
+                <div className="border-2 border-emerald-400/20 bg-emerald-500/5 rounded-xl p-5 md:p-6 pt-7 md:pt-8 space-y-3">
                   {current.after.map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-emerald-300 mt-0.5 flex-shrink-0" />

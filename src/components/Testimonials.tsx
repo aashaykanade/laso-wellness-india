@@ -62,7 +62,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="section-padding premium-section">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 animate-fade-in">
           <p className="eyebrow mb-5">Chapter VI — Voices</p>
           <h2 className="section-title mb-6">Client <span className="italic">Testimonials</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
@@ -91,7 +91,7 @@ const Testimonials = () => {
                 <div className="flex">
                   {testimonials.map((testimonial) => (
                     <div key={testimonial.id} className="w-full flex-shrink-0">
-                      <Card className="testimonial-card border-none p-8 shadow-lg">
+                      <Card className="testimonial-card border-none p-6 md:p-8 shadow-lg">
                         <div>
                           <div className="mb-4">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
