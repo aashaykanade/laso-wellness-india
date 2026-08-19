@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="section-padding premium-section">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 animate-fade-in">
           <p className="eyebrow mb-5">Chapter I — Philosophy</p>
           <h2 className="section-title mb-6">About <span className="italic">Laso Wellness</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
@@ -14,7 +14,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="animate-fade-in-left">
             <div className="relative">
               <img 

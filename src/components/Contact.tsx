@@ -80,7 +80,7 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding premium-section">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 animate-fade-in">
           <p className="eyebrow mb-5">Chapter VI — Reach Out</p>
           <h2 className="section-title mb-6">Contact <span className="italic">Us</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
@@ -90,8 +90,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="premium-glass p-8 rounded-2xl animate-fade-in-left">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+          <div className="premium-glass p-6 md:p-8 rounded-2xl animate-fade-in-left">
             <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-6">
               Our Healing Center
             </h3>
@@ -139,7 +139,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="premium-glass rounded-2xl p-8 animate-fade-in-right">
+          <div className="premium-glass rounded-2xl p-6 md:p-8 animate-fade-in-right">
             <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-6">
               Send Us a Message
             </h3>

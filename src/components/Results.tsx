@@ -30,7 +30,7 @@ const Results = () => {
   return (
     <section id="results" className="section-padding premium-section">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 animate-fade-in">
           <p className="eyebrow mb-5">Chapter IV — Evidence</p>
           <h2 className="section-title mb-6">Documented <span className="italic">Results</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
@@ -40,7 +40,7 @@ const Results = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
           <ResultCard 
             condition="Parkinson's Disease"
             improvement="78%"
@@ -84,7 +84,7 @@ const Results = () => {
           />
         </div>
 
-        <div className="mt-16 premium-glass p-8 rounded-2xl max-w-3xl mx-auto">
+        <div className="mt-10 md:mt-16 premium-glass p-6 md:p-8 rounded-2xl max-w-3xl mx-auto">
           <h3 className="text-2xl font-serif font-bold text-emerald-300 mb-4">Our Research & Documentation</h3>
           <p className="mb-4">
             At Laso Wellness, we maintain detailed records of all client progress. Our results have been 

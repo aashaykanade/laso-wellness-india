@@ -36,7 +36,7 @@ const Services = () => {
       ></div>
       
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 animate-fade-in">
           <p className="eyebrow mb-5">Chapter II — The Practice</p>
           <h2 className="section-title mb-6">Our Healing <span className="italic">Services</span></h2>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
@@ -46,7 +46,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
           <ServiceCard 
             title="Advanced Energy Healing"
             description="Cutting-edge energy healing techniques that balance and restore the body's natural energy systems to promote healing from within."
