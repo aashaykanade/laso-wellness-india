@@ -42,12 +42,17 @@
     {
       "@context": "https://schema.org",
       "@type": ["MedicalBusiness", "MedicalClinic"],
+      "@id": "https://laso-wellbeing-glow-india.lovable.app/#clinic",
       "name": "Laso Wellness",
-      "description": "Energy healing, holistic wellness and alternative medicine therapies clinic in Pune, led by Dr. Yashwant Kanade.",
+      "description": "Energy healing, holistic wellness and alternative medicine therapies clinic in Pune, led by Dr. Yashwant Kanade (MD, Alternative Medicine). Strictly by appointment.",
       "url": "https://laso-wellbeing-glow-india.lovable.app/",
       "image": "https://laso-wellbeing-glow-india.lovable.app/lovable-uploads/logo.png",
-      "medicalSpecialty": ["Alternative Medicine", "Naturopathy", "Holistic Medicine"],
+      "email": "office@lasowellness.in",
+      "telephone": ["+91 9890038839", "+91 7744059460"],
       "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, UPI",
+      "medicalSpecialty": ["Alternative Medicine", "Naturopathy", "Holistic Medicine", "Energy Healing"],
       "areaServed": [
         { "@type": "City", "name": "Pune" },
         { "@type": "State", "name": "Maharashtra" },
@@ -66,20 +71,53 @@
         "latitude": 18.5089,
         "longitude": 73.8553
       },
-      "employee": {
-        "@type": "Physician",
-        "name": "Dr. Yashwant Kanade",
-        "jobTitle": "Alternative Medicine Practitioner",
-        "medicalSpecialty": ["Alternative Medicine", "Naturopathy", "Energy Healing"]
-      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "founder": { "@id": "https://laso-wellbeing-glow-india.lovable.app/#physician" },
+      "employee": { "@id": "https://laso-wellbeing-glow-india.lovable.app/#physician" },
       "availableService": [
-        { "@type": "MedicalTherapy", "name": "Naturopathy" },
-        { "@type": "MedicalTherapy", "name": "Alternative Medicine" },
-        { "@type": "MedicalTherapy", "name": "Energy Healing" },
-        { "@type": "MedicalTherapy", "name": "Holistic Healing" },
-        { "@type": "MedicalTherapy", "name": "Kanaad Therapy" },
-        { "@type": "MedicalTherapy", "name": "Kriya Yoga Therapy" }
+        { "@type": "MedicalTherapy", "name": "Energy Healing", "description": "Subtle-body energetic restoration to resolve chronic physical and psychological conditions at the root." },
+        { "@type": "MedicalTherapy", "name": "Advanced Energy Healing", "description": "Deeper energetic intervention for complex, long-standing chronic disease." },
+        { "@type": "MedicalTherapy", "name": "Holistic Wellness", "description": "Whole-system harmonisation of body, mind and energy field." },
+        { "@type": "MedicalTherapy", "name": "Alternative Medicine Therapies", "description": "Non-allopathic therapeutic protocols under Dr. Yashwant Kanade." },
+        { "@type": "MedicalTherapy", "name": "Iatrogenic Healing", "description": "Addressing illness caused or worsened by prior medical treatment." },
+        { "@type": "MedicalTherapy", "name": "Counselling for Psychosomatic Diseases", "description": "Resolving conditions rooted in the mind-body interface." }
       ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "@id": "https://laso-wellbeing-glow-india.lovable.app/#physician",
+      "name": "Dr. Yashwant Kanade",
+      "jobTitle": "Alternative Medicine Practitioner & Energy Healer",
+      "description": "Founder and lead practitioner of Laso Wellness, Pune. Specialist in energy healing and alternative medicine for chronic, psychosomatic and iatrogenic conditions.",
+      "medicalSpecialty": ["Alternative Medicine", "Naturopathy", "Energy Healing", "Holistic Medicine"],
+      "qualification": "MD (Alternative Medicine)",
+      "credential": "MD (Alternative Medicine)",
+      "knowsAbout": [
+        "Energy Healing",
+        "Chakra Healing",
+        "Parkinson's disease",
+        "Depression",
+        "Skin disorders",
+        "Skeletal disorders",
+        "Hypertension",
+        "Addiction",
+        "Psychosomatic disease",
+        "Iatrogenic disease"
+      ],
+      "worksFor": { "@id": "https://laso-wellbeing-glow-india.lovable.app/#clinic" },
+      "image": "https://laso-wellbeing-glow-india.lovable.app/lovable-uploads/logo.png",
+      "areaServed": { "@type": "City", "name": "Pune" }
     }
     </script>
 
