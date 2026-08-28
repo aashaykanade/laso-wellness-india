@@ -8,11 +8,15 @@ const StickyCallBar = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#05041a]/95 backdrop-blur-xl border-t border-[hsl(var(--gold))]/30 shadow-[0_-10px_40px_-10px_rgba(0,0,0,0.7)]">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-3">
-          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[hsl(var(--gold))]/15 border border-[hsl(var(--gold))]/40">
+        <a
+          href={telUrl}
+          className="flex items-center gap-3 group"
+          aria-label={`Call ${displayNumber} for appointment`}
+        >
+          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[hsl(var(--gold))]/15 border border-[hsl(var(--gold))]/40 group-hover:bg-[hsl(var(--gold))]/25 transition-colors">
             <Phone className="w-4 h-4 text-[hsl(var(--gold))]" />
           </span>
-          <div className="leading-tight">
+          <div className="leading-tight text-left">
             <p className="text-[10px] uppercase tracking-[0.28em] text-[hsl(var(--ivory))]/60">
               By Appointment
             </p>
@@ -20,7 +24,7 @@ const StickyCallBar = () => {
               Call for appointment {displayNumber}
             </p>
           </div>
-        </div>
+        </a>
         <a
           href={telUrl}
           className="btn-gold-solid !px-5 md:!px-8 !py-3 text-[11px] md:text-xs"
