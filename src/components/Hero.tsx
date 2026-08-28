@@ -40,8 +40,8 @@ const Hero = () => {
 
           <div className="flex flex-col md:flex-row md:items-end gap-7 md:gap-16 mt-8 md:mt-16">
             <p className="max-w-md text-base md:text-lg text-[hsl(var(--ivory))]/70 leading-relaxed font-light">
-              Under the guidance of <em className="not-italic text-[hsl(var(--gold-soft))]">Dr. Yashwant Kanade</em>, Laso Wellness facilitates deep-field
-              energetic restoration — harmonising the subtle body to resolve chronic conditions the physical layer alone cannot reach.
+              Under <em className="not-italic text-[hsl(var(--gold-soft))]">Dr. Yashwant Kanade</em>, we offer Healing and Allied Therapy treatments to
+              heal chronic conditions at their root — restoring health where conventional care alone falls short.
             </p>
 
             <div className="flex flex-col gap-3">
