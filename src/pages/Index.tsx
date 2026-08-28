@@ -11,10 +11,11 @@ import CaseStudies from "@/components/CaseStudies";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import StickyCallBar from "@/components/StickyCallBar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pb-20 md:pb-24">
       <Navbar />
       <Hero />
       <AsSeenIn />
@@ -27,6 +28,7 @@ const Index = () => {
       <Contact />
       <Footer />
       <WhatsAppButton />
+      <StickyCallBar />
     </div>
   );
 };
