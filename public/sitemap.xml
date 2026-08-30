@@ -11,6 +11,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://laso-wellbeing-glow-india.lovable.app/treatments/addiction</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://laso-wellbeing-glow-india.lovable.app/treatments/sciatica</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://laso-wellbeing-glow-india.lovable.app/treatments/knee-pain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://laso-wellbeing-glow-india.lovable.app/blog/understanding-energy-healing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
