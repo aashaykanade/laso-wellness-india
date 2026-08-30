@@ -8,6 +8,9 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
+import AddictionCare from "./pages/treatments/AddictionCare";
+import SciaticaRelief from "./pages/treatments/SciaticaRelief";
+import KneePainManagement from "./pages/treatments/KneePainManagement";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +24,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/treatments/addiction" element={<AddictionCare />} />
+          <Route path="/treatments/sciatica" element={<SciaticaRelief />} />
+          <Route path="/treatments/knee-pain" element={<KneePainManagement />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
