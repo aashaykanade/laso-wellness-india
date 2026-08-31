@@ -35,26 +35,26 @@ const data: TreatmentPageData = {
         text: "By week two, the night pain had eased enough for unbroken sleep. By week four, he sat through a full hour of work without a single flare. Each session built on the last — inflammation subsiding, the nerve releasing, calm returning to his body.",
       },
       {
-        heading: "Back to Work — Surgery Avoided",
-        text: "Six weeks after walking in with a surgery date looming, he walked out pain-free. He returned to full desk work, resumed his evening walks, and cancelled the surgical consultation he never needed.",
+        heading: "Back to Work — Fully Recovered",
+        text: "Six weeks after walking in, he walked out pain-free. He returned to full desk work, resumed his evening walks, and got back to living life on his own terms.",
       },
     ],
     results: [
       "90% reduction in nerve pain within 6 weeks",
       "Full return to daily activities and desk work",
-      "Surgery completely avoided through non-invasive care",
+      "Complete recovery through gentle, natural care",
     ],
   },
   testimonial: {
     quote:
-      "I was one signature away from spinal surgery. Laso Wellness gave me my life back without a single incision. The constant pain that ruled my days is simply gone.",
+      "I had almost lost hope of living pain-free. Laso Wellness gave me my life back. The constant pain that ruled my days is simply gone.",
     initials: "A. K.",
     city: "Pune",
     rating: 5,
   },
-  seoTitle: "Sciatica Treatment in Pune | Non-Surgical Nerve Pain Relief — Laso Wellness",
+  seoTitle: "Sciatica Treatment in Pune | Natural Nerve Pain Relief — Laso Wellness",
   seoDescription:
-    "Non-invasive sciatica relief in Pune with Dr. Yashwant Kanade. Energy healing, body talk, crystal healing and counselling for L4-L5 disc herniation. Case study: 90% pain reduction in 6 weeks, surgery avoided. By appointment: 9890038839.",
+    "Sciatica relief in Pune with Dr. Yashwant Kanade. Energy healing, body talk, crystal healing and counselling for L4-L5 disc herniation. Case study: 90% pain reduction in 6 weeks. By appointment: 9890038839.",
 };
 
 const SciaticaRelief = () => <TreatmentPage data={data} />;
