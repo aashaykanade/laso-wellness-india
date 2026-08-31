@@ -7,7 +7,7 @@ const data: TreatmentPageData = {
     "Joint healing and mobility restoration through energy healing, body talk, crystal healing and counselling — reducing arthritis pain and helping you walk, climb, and move freely again.",
   overview: [
     "Chronic knee pain steals independence quietly — first the stairs, then the morning walks, then the simple joy of moving without fear. Our joint rehabilitation program works to reduce inflammation, support cartilage health, and restore confident movement.",
-    "Dr. Yashwant Kanade combines energy healing with body talk, crystal healing and counselling, offering a gentle yet effective alternative for patients who wish to avoid or delay joint replacement surgery.",
+    "Dr. Yashwant Kanade combines energy healing with body talk, crystal healing and counselling, offering a gentle yet effective path to joint health and mobility.",
   ],
   overviewPoints: [
     "Energy healing focused on the affected joints",

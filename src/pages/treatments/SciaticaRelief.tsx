@@ -4,13 +4,13 @@ const data: TreatmentPageData = {
   slug: "sciatica",
   title: "Sciatica Relief",
   heroTagline:
-    "Non-invasive nerve pain care combining energy healing, body talk, crystal healing and counselling — relieving radiating sciatic pain and restoring mobility, without surgery.",
+    "Gentle nerve pain care combining energy healing, body talk, crystal healing and counselling — relieving radiating sciatic pain and restoring mobility, naturally.",
   overview: [
     "Sciatica is more than back pain — it is nerve pain that radiates down the leg, disrupting sleep, work, and every moment of sitting or standing. Our protocols address the inflammation, muscular imbalance, and energy blockages that keep the nerve irritated.",
-    "At Laso Wellness, Dr. Yashwant Kanade designs a personalized, non-surgical care plan for each patient — energy healing, body talk, crystal healing and counselling — so healing happens naturally and sustainably.",
+    "At Laso Wellness, Dr. Yashwant Kanade designs a personalized care plan for each patient — energy healing, body talk, crystal healing and counselling — so healing happens naturally and sustainably.",
   ],
   overviewPoints: [
-    "Non-surgical, drug-free nerve pain protocols",
+    "Gentle, natural nerve pain protocols",
     "Body talk sessions to release held tension patterns",
     "Energy healing to calm inflammation and accelerate nerve recovery",
     "Counselling and crystal healing to sustain relief",
