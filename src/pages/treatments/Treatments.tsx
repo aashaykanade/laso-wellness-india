@@ -11,22 +11,22 @@ const treatments = [
     path: "/treatments/addiction",
     title: "Addiction Recovery",
     summary:
-      "A compassionate 90-day holistic detox and rehabilitation program addressing the root causes of dependency — not just the symptoms.",
-    meta: "90 Days · Holistic Detox & Rehabilitation",
+      "A compassionate 90-day program of energy healing, body talk, crystal healing and counselling addressing the root causes of dependency.",
+    meta: "90 Days · Energy Healing, Body Talk & Counselling",
   },
   {
     path: "/treatments/sciatica",
     title: "Sciatica Relief",
     summary:
-      "Non-invasive nerve pain protocols combining energy healing and targeted allied therapies to relieve radiating pain without surgery.",
-    meta: "6 Weeks · Targeted Therapy & Spinal Decompression",
+      "Non-invasive nerve pain care combining energy healing, body talk, crystal healing and counselling to relieve radiating pain without surgery.",
+    meta: "6 Weeks · Energy Healing, Body Talk & Crystal Healing",
   },
   {
     path: "/treatments/knee-pain",
     title: "Knee Pain Management",
     summary:
-      "Joint rehabilitation and mobility restoration for osteoarthritis and chronic knee stiffness — helping you move freely again.",
-    meta: "8 Weeks · Joint Regeneration & Physical Therapy",
+      "Energy healing, body talk, crystal healing and counselling for osteoarthritis and chronic knee stiffness — helping you move freely again.",
+    meta: "8 Weeks · Energy Healing, Body Talk & Crystal Healing",
   },
 ];
 
@@ -53,7 +53,7 @@ const Treatments = () => {
           <h1 className="section-title mb-6">Our <span className="italic">Treatments</span></h1>
           <div className="w-16 h-px bg-[hsl(var(--gold))]/70 mx-auto mb-8"></div>
           <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
-            Healing and Allied Therapy programs designed by Dr. Yashwant Kanade, MD (Alternative Medicine),
+            Energy healing, body talk, crystal healing and counselling programs designed by Dr. Yashwant Kanade, MD (Alternative Medicine),
             to treat chronic conditions at their root. Select a treatment to read the full case study.
           </p>
         </div>
