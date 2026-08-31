@@ -18,7 +18,7 @@ const treatments = [
     path: "/treatments/sciatica",
     title: "Sciatica Relief",
     summary:
-      "Non-invasive nerve pain care combining energy healing, body talk, crystal healing and counselling to relieve radiating pain without surgery.",
+      "Gentle nerve pain care combining energy healing, body talk, crystal healing and counselling to relieve radiating pain naturally.",
     meta: "6 Weeks · Energy Healing, Body Talk & Crystal Healing",
   },
   {
