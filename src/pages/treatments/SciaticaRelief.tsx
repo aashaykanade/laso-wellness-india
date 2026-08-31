@@ -20,15 +20,15 @@ const data: TreatmentPageData = {
     duration: "6 Weeks",
     approach: "Energy Healing, Body Talk & Crystal Healing",
     patientBackground:
-      "A 38-year-old IT professional whose radiating leg pain had become so severe that he could not sit at his desk for more than 15 minutes — with surgery presented as the only option.",
+      "A 38-year-old IT professional whose radiating leg pain had become so severe that he could not sit at his desk for more than 15 minutes.",
     story: [
       {
         heading: "Pain That Ruled Every Day",
-        text: "Every workday was measured in minutes — fifteen at a desk, then pacing the room to escape the electric pain shooting down his left leg. His MRI showed an L4-L5 disc herniation, and surgery was being discussed. He came to Laso Wellness hoping for any alternative.",
+        text: "Every workday was measured in minutes — fifteen at a desk, then pacing the room to escape the electric pain shooting down his left leg. His MRI showed an L4-L5 disc herniation. He came to Laso Wellness hoping for a natural path to recovery.",
       },
       {
-        heading: "Choosing the Non-Surgical Path",
-        text: "After a thorough assessment, Dr. Kanade designed a 6-week plan: energy healing sessions to calm the inflamed sciatic nerve, body talk to release the tension patterns locking his lower back, crystal healing to support recovery, and counselling to ease the anxiety the pain had created. The goal was clear — heal without the knife.",
+        heading: "Choosing the Natural Path",
+        text: "After a thorough assessment, Dr. Kanade designed a 6-week plan: energy healing sessions to calm the inflamed sciatic nerve, body talk to release the tension patterns locking his lower back, crystal healing to support recovery, and counselling to ease the anxiety the pain had created. The goal was clear — deep, natural healing at the root.",
       },
       {
         heading: "Week by Week, Mobility Returned",
