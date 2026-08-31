@@ -50,9 +50,8 @@ const Footer = () => {
               <li><a href="#results" className="text-gray-200 hover:text-white transition-colors">Results & Research</a></li>
               <li><a href="#testimonials" className="text-gray-200 hover:text-white transition-colors">Testimonials</a></li>
               <li><a href="#contact" className="text-gray-200 hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="/treatments/addiction" className="text-gray-200 hover:text-white transition-colors">Addiction Recovery</a></li>
-              <li><a href="/treatments/sciatica" className="text-gray-200 hover:text-white transition-colors">Sciatica Relief</a></li>
-              <li><a href="/treatments/knee-pain" className="text-gray-200 hover:text-white transition-colors">Knee Pain Management</a></li>
+              <li><a href="/treatments" className="text-gray-200 hover:text-white transition-colors">Treatments</a></li>
+
               <li><a href="/blog" className="text-gray-200 hover:text-white transition-colors">Blog</a></li>
             </ul>
           </div>
