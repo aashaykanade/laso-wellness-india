@@ -1,9 +1,14 @@
 import { MessageCircle } from "lucide-react";
+import { googleAdsIds, trackGoogleAdsConversion } from "@/lib/gtag";
 
 const WhatsAppButton = () => {
   const phoneNumber = "919890038839";
   const message = encodeURIComponent("Hi, I'd like to know more about your healing services.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+  const handleClick = () => {
+    trackGoogleAdsConversion(googleAdsIds.whatsapp);
+  };
 
   return (
     <a
@@ -11,6 +16,7 @@ const WhatsAppButton = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
+      onClick={handleClick}
       className="fixed bottom-20 md:bottom-24 right-4 md:right-6 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe57] text-white px-5 md:px-6 py-3.5 md:py-4 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.45)] hover:shadow-[0_10px_40px_rgba(37,211,102,0.6)] transition-all duration-300 hover:scale-105 group border border-white/20"
     >
       <MessageCircle className="w-6 h-6 fill-white" />
