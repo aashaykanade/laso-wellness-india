@@ -1,15 +1,21 @@
 import { Phone } from "lucide-react";
+import { googleAdsIds, trackGoogleAdsConversion } from "@/lib/gtag";
 
 const StickyCallBar = () => {
   const phoneNumber = "919890038839";
   const telUrl = `tel:+${phoneNumber}`;
   const displayNumber = "9890038839";
 
+  const handleCallClick = () => {
+    trackGoogleAdsConversion(googleAdsIds.callNow);
+  };
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#05041a]/95 backdrop-blur-xl border-t border-[hsl(var(--gold))]/30 shadow-[0_-10px_40px_-10px_rgba(0,0,0,0.7)]">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <a
           href={telUrl}
+          onClick={handleCallClick}
           className="flex items-center gap-3 group"
           aria-label={`Call ${displayNumber} for appointment`}
         >
@@ -27,6 +33,7 @@ const StickyCallBar = () => {
         </a>
         <a
           href={telUrl}
+          onClick={handleCallClick}
           className="btn-gold-solid !px-5 md:!px-8 !py-3 text-[11px] md:text-xs"
           aria-label={`Call ${displayNumber} for appointment`}
         >
