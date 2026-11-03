@@ -12,6 +12,8 @@ import Treatments from "./pages/treatments/Treatments";
 import AddictionCare from "./pages/treatments/AddictionCare";
 import SciaticaRelief from "./pages/treatments/SciaticaRelief";
 import KneePainManagement from "./pages/treatments/KneePainManagement";
+import Auth from "./pages/Auth";
+import AdminSeo from "./pages/AdminSeo";
 
 
 const queryClient = new QueryClient();
@@ -31,6 +33,8 @@ const App = () => (
 
           <Route path="/treatments/sciatica" element={<SciaticaRelief />} />
           <Route path="/treatments/knee-pain" element={<KneePainManagement />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/admin/seo" element={<AdminSeo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
