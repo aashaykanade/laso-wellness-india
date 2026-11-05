@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import auraEnergyHealing from "@/assets/aura-energy-healing.jpg";
 import ethericBodyHealing from "@/assets/etheric-body-healing.jpg";
+import servicesBg from "@/assets/services-bg.webp";
 
 const ServiceCard = ({ title, description, icon, image }: { title: string; description: string; icon: React.ReactNode; image: string }) => {
   return (
