@@ -1,6 +1,6 @@
 
-import sakalLogo from "@/assets/sakal-logo.png";
-import loksattaLogo from "@/assets/loksatta-logo.png";
+import sakalLogo from "@/assets/sakal-logo.webp";
+import loksattaLogo from "@/assets/loksatta-logo.webp";
 
 const AsSeenIn = () => {
   return (
