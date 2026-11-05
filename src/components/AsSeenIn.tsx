@@ -16,11 +16,15 @@ const AsSeenIn = () => {
             src={sakalLogo}
             alt="Sakal Marathi Newspaper - सकाळ"
             className="h-14 md:h-20 object-contain opacity-70 hover:opacity-100 transition-all brightness-0 invert"
+            loading="lazy"
+            decoding="async"
           />
           <img
             src={loksattaLogo}
             alt="Loksatta Marathi Newspaper - लोकसत्ता"
             className="h-14 md:h-20 object-contain opacity-70 hover:opacity-100 transition-all brightness-0 invert"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
