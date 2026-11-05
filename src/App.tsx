@@ -18,6 +18,7 @@ const SciaticaRelief = lazy(() => import("./pages/treatments/SciaticaRelief"));
 const KneePainManagement = lazy(() => import("./pages/treatments/KneePainManagement"));
 const Auth = lazy(() => import("./pages/Auth"));
 const AdminSeo = lazy(() => import("./pages/AdminSeo"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -50,8 +51,5 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-
-// NotFound is imported lazily alongside the other secondary routes.
-import NotFound from "./pages/NotFound";
 
 export default App;
