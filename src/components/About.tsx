@@ -18,9 +18,11 @@ const About = () => {
           <div className="animate-fade-in-left">
             <div className="relative">
               <img 
-                src="/lovable-uploads/5cfa80ce-6286-4208-9441-93e3f308ad57.png" 
+                src="/lovable-uploads/5cfa80ce-6286-4208-9441-93e3f308ad57.webp" 
                 alt="Human Energy Field and Chakras" 
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute -bottom-5 -right-5 premium-glass p-4 rounded-lg max-w-xs">
                 <p className="font-serif italic text-purple-200">

@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import auraEnergyHealing from "@/assets/aura-energy-healing.jpg";
 import ethericBodyHealing from "@/assets/etheric-body-healing.jpg";
+import servicesBg from "@/assets/services-bg.webp";
 
 const ServiceCard = ({ title, description, icon, image }: { title: string; description: string; icon: React.ReactNode; image: string }) => {
   return (
@@ -12,6 +13,8 @@ const ServiceCard = ({ title, description, icon, image }: { title: string; descr
           src={image} 
           alt={title} 
           className="w-16 h-16 rounded-lg object-cover flex-shrink-0 ring-1 ring-white/10"
+          loading="lazy"
+          decoding="async"
         />
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
@@ -32,7 +35,7 @@ const Services = () => {
     <section id="services" className="section-padding relative premium-section">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.04] -z-10 mix-blend-luminosity" 
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80')" }}
+        style={{ backgroundImage: `url(${servicesBg})` }}
       ></div>
       
       <div className="container mx-auto">
